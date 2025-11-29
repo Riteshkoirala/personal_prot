@@ -8,6 +8,9 @@
   --accent: #06B6D4;
   --accent-2: #B5179E;
   --accent-secondary: #4895EF;
+  --gradient-primary: linear-gradient(135deg, #06B6D4, #B5179E);
+  --gradient-secondary: linear-gradient(135deg, #4895EF, #B5179E);
+  --gradient-soft: linear-gradient(145deg, rgba(6, 182, 212, 0.22), rgba(181, 23, 158, 0.18));
   --accent-soft: rgba(6, 182, 212, 0.15);
   --accent-secondary-soft: rgba(72, 149, 239, 0.15);
   --accent-strong: #E91E63;
@@ -29,7 +32,7 @@
   --modal-shadow: 0 20px 60px rgba(0, 0, 0, 0.8),
     0 0 40px rgba(247, 37, 133, 0.3),
     0 0 60px rgba(72, 149, 239, 0.2);
-  --card-glass-bg: linear-gradient(140deg, rgba(255, 255, 255, 0.3), rgba(6, 182, 212, 0.08));
+  --card-glass-bg: linear-gradient(140deg, rgba(255, 255, 255, 0.2), rgba(6, 182, 212, 0.15), rgba(181, 23, 158, 0.12));
   --card-glass-border: rgba(255, 255, 255, 0.4);
 }
 
@@ -43,6 +46,9 @@
   --accent: #06B6D4;
   --accent-2: #B5179E;
   --accent-secondary: #4895EF;
+  --gradient-primary: linear-gradient(135deg, #00C6FF, #B5179E);
+  --gradient-secondary: linear-gradient(135deg, #6EE7B7, #4895EF);
+  --gradient-soft: linear-gradient(145deg, rgba(6, 182, 212, 0.25), rgba(181, 23, 158, 0.2));
   --accent-soft: rgba(6, 182, 212, 0.15);
   --accent-secondary-soft: rgba(72, 149, 239, 0.15);
   --accent-strong: #E91E63;
@@ -53,7 +59,7 @@
   --modal-border: rgba(6, 182, 212, 0.35);
   --modal-shadow: 0 20px 60px rgba(0, 0, 0, 0.15),
     0 0 30px rgba(6, 182, 212, 0.15);
-  --card-glass-bg: linear-gradient(140deg, rgba(255, 255, 255, 0.92), rgba(6, 182, 212, 0.12));
+  --card-glass-bg: linear-gradient(140deg, rgba(255, 255, 255, 0.95), rgba(6, 182, 212, 0.18), rgba(181, 23, 158, 0.12));
   --card-glass-border: rgba(6, 182, 212, 0.25);
 }
 
@@ -251,9 +257,9 @@ body::before {
   gap: 20px;
   padding: 16px 24px;
   border-radius: var(--radius-lg);
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--gradient-soft);
   backdrop-filter: blur(20px);
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid var(--card-glass-border);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 16px;
@@ -262,7 +268,7 @@ body::before {
 }
 
 .site-header.scrolled {
-  background: rgba(255, 255, 255, 0.15);
+  background: var(--gradient-primary);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
 }
 
@@ -318,7 +324,7 @@ body::before {
 
 .nav a:hover {
   transform: translateY(-3px);
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--gradient-soft);
   color: var(--accent);
 }
 
@@ -327,15 +333,15 @@ body::before {
 }
 
 .nav a.active {
-  color: var(--accent);
-  background: rgba(6, 182, 212, 0.2);
+  color: white;
+  background: var(--gradient-primary);
   box-shadow: 0 0 20px rgba(6, 182, 212, 0.4);
 }
 
 .theme-toggle {
   border-radius: var(--radius-pill);
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid var(--card-glass-border);
+  background: var(--gradient-soft);
   color: var(--text);
   padding: 8px 14px;
   display: inline-flex;
@@ -348,7 +354,7 @@ body::before {
 
 .theme-toggle:hover {
   transform: scale(1.1) rotate(180deg);
-  background: rgba(255, 255, 255, 0.15);
+  background: var(--gradient-secondary);
   box-shadow: 0 0 20px rgba(247, 37, 133, 0.4);
 }
 
@@ -376,9 +382,9 @@ body::before {
 .hero-text {
   padding: 32px;
   border-radius: var(--radius-lg);
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--gradient-soft);
   backdrop-filter: blur(20px);
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid var(--card-glass-border);
   box-shadow: var(--shadow-soft);
   position: relative;
   overflow: hidden;
@@ -558,9 +564,9 @@ body::before {
 .hero-card {
   border-radius: var(--radius-lg);
   padding: 24px;
-  background: rgba(255, 255, 255, 0.25);
+  background: var(--card-glass-bg);
   backdrop-filter: blur(20px);
-  border: 2px solid rgba(255, 255, 255, 0.35);
+  border: 2px solid var(--card-glass-border);
   box-shadow: var(--shadow-soft);
   display: flex;
   flex-direction: column;
@@ -693,7 +699,7 @@ body::before {
   align-items: center;
   padding: 6px 14px;
   border-radius: var(--radius-pill);
-  background: linear-gradient(135deg, var(--accent-soft), var(--accent-secondary-soft));
+  background: var(--gradient-primary);
   color: var(--accent);
   font-size: 12px;
   font-weight: 600;
@@ -703,7 +709,7 @@ body::before {
 
 .stack-tag:hover {
   transform: translateY(-2px);
-  background: linear-gradient(135deg, rgba(6, 182, 212, 0.25), rgba(59, 130, 246, 0.25));
+  background: var(--gradient-secondary);
   border-color: var(--accent);
   box-shadow: 0 4px 12px rgba(6, 182, 212, 0.3);
 }
@@ -735,8 +741,8 @@ body::before {
   align-items: center;
   padding: 6px 14px;
   border-radius: var(--radius-pill);
-  background: linear-gradient(135deg, var(--accent-soft), var(--accent-secondary-soft));
-  color: var(--accent);
+  background: var(--gradient-primary);
+  color: white;
   font-size: 12px;
   font-weight: 600;
   border: 1px solid rgba(6, 182, 212, 0.3);
@@ -745,7 +751,7 @@ body::before {
 
 .stack-tag:hover {
   transform: translateY(-2px);
-  background: linear-gradient(135deg, rgba(6, 182, 212, 0.25), rgba(59, 130, 246, 0.25));
+  background: var(--gradient-secondary);
   border-color: var(--accent);
   box-shadow: 0 4px 12px rgba(6, 182, 212, 0.3);
 }
@@ -760,9 +766,9 @@ main {
 .section {
   border-radius: var(--radius-lg);
   padding: 32px;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--gradient-soft);
   backdrop-filter: blur(20px);
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid var(--card-glass-border);
   box-shadow: var(--shadow-subtle);
   opacity: 0;
   transform: translateY(40px);
@@ -1276,8 +1282,8 @@ main {
   align-items: center;
   padding: 6px 14px;
   border-radius: var(--radius-pill);
-  background: linear-gradient(135deg, var(--accent-soft), var(--accent-secondary-soft));
-  color: var(--accent);
+  background: var(--gradient-primary);
+  color: white;
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.14em;
@@ -1455,16 +1461,15 @@ main {
 
 /* Contact */
 .section-contact {
-  background: radial-gradient(circle at top, rgba(6, 182, 212, 0.15), transparent 60%),
-    rgba(255, 255, 255, 0.05);
+  background: linear-gradient(145deg, rgba(6, 182, 212, 0.18), rgba(181, 23, 158, 0.18));
 }
 
 .contact-card {
   border-radius: var(--radius-md);
   padding: 32px;
-  background: rgba(255, 255, 255, 0.15);
+  background: var(--gradient-soft);
   backdrop-filter: blur(20px);
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid var(--card-glass-border);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
   font-size: 15px;
   color: var(--text-soft);
@@ -1567,9 +1572,9 @@ main {
   align-items: center;
   gap: 16px;
   padding: 18px 20px;
-  background: rgba(6, 182, 212, 0.08);
+  background: var(--gradient-soft);
   backdrop-filter: blur(10px);
-  border: 2px solid rgba(6, 182, 212, 0.2);
+  border: 2px solid var(--card-glass-border);
   border-radius: var(--radius-md);
   text-decoration: none;
   color: var(--text);
@@ -1595,7 +1600,7 @@ main {
 }
 
 .community-card:hover {
-  background: rgba(6, 182, 212, 0.15);
+  background: var(--gradient-secondary);
   border-color: var(--accent);
   transform: translateY(-4px) scale(1.02);
   box-shadow: 0 12px 30px rgba(6, 182, 212, 0.3),
@@ -1687,8 +1692,7 @@ main {
 }
 
 .section-hobbies {
-  background: radial-gradient(circle at top, rgba(6, 182, 212, 0.15), transparent 70%),
-    rgba(255, 255, 255, 0.05);
+  background: linear-gradient(150deg, rgba(6, 182, 212, 0.18), rgba(181, 23, 158, 0.18));
 }
 
 .hobbies-grid {
