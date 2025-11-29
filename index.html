@@ -2,1186 +2,959 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Ritesh Koirala</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/ritesh.png" rel="icon">
-  <link href="assets/img/ritesh.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ritesh Koirala – Software Developer</title>
+  <meta name="description"
+    content="Portfolio of Ritesh Koirala, a results-driven software developer specialising in PHP, Laravel, JavaScript, MySQL, and AWS." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 
-<body class="index-page">
+<body>
+  <div class="cursor-bubble" id="cursorBubble"></div>
 
-  <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <div class="profile-img">
-      <img src="assets/img/im.jpeg" alt="" class="img-fluid rounded-circle">
-    </div>
-
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <h1 class="sitename">Ritesh Koirala</h1>
-    </a>
-
-    <style>
-      .social-links a {
-        display: inline-block;
-        margin: 0 10px;
-        font-size: 24px;
-        color: #333;
-        transition: color 0.3s ease;
-      }
-      .social-links a.facebook:hover { color: #1877F2; }
-      .social-links a.instagram:hover { color: #E4405F; }
-      .social-links a.email:hover { color: #D44638; }
-      .social-links a.linkedin:hover { color: #0A66C2; }
-      .social-links a.twitter:hover { color: #000000; }
-      .social-links a.youtube:hover { color: #FF0000; }
-    </style>
-    
-    <div class="social-links text-center">
-      <a target="_blank" href="https://www.facebook.com/ritesh.don.123124/" class="facebook">
-        <i class="bi bi-facebook"></i>
-      </a>
-      <a target="_blank" href="https://www.instagram.com/ritesh_koirala/" class="instagram">
-        <i class="bi bi-instagram"></i>
-      </a>
-      <a target="_blank" href="mailto:riteshkoirala514@gmail.com" class="email">
-        <i class="bi bi-envelope"></i>
-      </a>
-      <a target="_blank" href="https://www.linkedin.com/in/riteshkoirala/" class="linkedin">
-        <i class="bi bi-linkedin"></i>
-      </a>
-      <a href="https://www.youtube.com/@riteshkoirala7278" class="youtube" target="_blank">
-        <i class="bi bi-youtube"></i>
-      </a>
-    </div>
-    
-    <nav id="navmenu" class="navmenu d-flex justify-content-center">
-      <ul class=" list-unstyled mb-0">
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#skills"><i class="bi bi-briefcase navicon"></i> Skills</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-        <li><a href="#blogs"><i class="bi bi-file-earmark-text navicon"></i> Blog Profile</a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
-      </ul>
-    </nav>
-    
-
-    <!-- New Section Added After Navigation Menu -->
-    <div class="highlighted-section text-center text-white p-3" style="background-color: #535350;">
-      <h3>Welcome to My Portfolio</h3>
-      <p>Explore my skills, experience, and projects. Let's connect to explore something amazing!</p>
-    </div>
-  
-</header>
-
-
-  <main class="main">
-
-<!-- Hero Section -->
-<section id="hero" class="hero section dark-background">
-  <img src="assets/img/ohh.jpeg" alt="" data-aos="fade-in" class="hero-bg-image">
-
-  <div class="container hero-container" data-aos="fade-up" data-aos-delay="100">
-    <!-- Hero Content Card -->
-    <div class="hero-card">
-      <div class="hero-card-content">
-        <h1 class="hero-title">Hello, I'm <span class="highlight">Ritesh Koirala</span></h1>
-        <p class="hero-subtitle">
-          A passionate <span class="typed" data-typed-items="Software Engineer, App Developer, Freelancer, Digital Marketing Enthustics"></span>
+  <!-- Welcome Popup Modal -->
+  <div class="welcome-popup" id="welcomePopup">
+    <div class="welcome-popup-content">
+      <div class="welcome-popup-header">
+        <span class="welcome-emoji">👋</span>
+        <button class="welcome-close" id="welcomeClose" aria-label="Close">×</button>
+      </div>
+      <div class="welcome-popup-body">
+        <h2>Hey there! 👋</h2>
+        <p class="welcome-intro">
+          I'm <strong>Ritesh Koirala</strong> — a software engineer with an entrepreneurial mindset,
+          a playful spirit, and an unapologetically curious personality.
         </p>
-
-        <!-- Call-to-Action Buttons -->
-        <div class="hero-buttons d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3">
-          <a href="#portfolio" class="btn btn-primary"><i class="bi bi-eye"></i> View Portfolio</a>
-          <a href="#contact" class="btn btn-secondary"><i class="bi bi-briefcase"></i> Hire Me</a>
-          <a href="assets/resume1.pdf" class="btn btn-download" download><i class="bi bi-download"></i> Download Resume</a>
-        </div>
-
-        <!-- Creative Section (What I Do) -->
-        <div class="what-i-do">
-          <h3>Turning Ideas into Impactful Realities!</h3>
-          <p>Great ideas should be more than just concepts – they need to be transformed into solutions that drive results. With a strong focus on design and marketing, I help businesses and brands bring their ideas to life, ensuring they stand out in the digital world and resonate with their audience. Let’s make your vision a reality!</p>
-
-          <a href="#about" class="btn btn-secondary"><i class="bi bi-lightbulb"></i> Learn More</a>
-        </div>
+        <p class="welcome-message">
+          I'm someone who's <strong>trying to improve day by day</strong> and will prove worthy of
+          your time and effort. So if you're looking to connect, collaborate, or build something amazing —
+          <strong>contacting me will be worth it.</strong>
+        </p>
+        <p class="welcome-cta">
+          <strong>Whatever your background, let's build something great and win the world! 🚀</strong>
+        </p>
+      </div>
+      <div class="welcome-popup-footer">
+        <button class="btn primary welcome-btn" id="welcomeBtn">
+          Let's Build Together! 🚀
+        </button>
       </div>
     </div>
+    <div class="welcome-popup-overlay"></div>
   </div>
-</section>
 
-<!-- CSS Styling -->
-<style>
-  /* General Hero Section Styles */
-  .hero {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
+  <div class="page">
+    <header class="site-header">
+      <div class="logo-mark">RK</div>
+      <nav class="nav">
+        <a href="#about">About 😎</a>
+        <a href="#skills">Skills ⚡</a>
+        <a href="#projects">Projects 🚀</a>
+        <a href="#experience">Experience 💼</a>
+        <a href="#contact">Contact 🎯</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon">☾</span>
+      </button>
+    </header>
 
-  .hero-bg-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-  }
-
-  /* Hero Card Styles */
-  .hero-card {
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 20px;
-    padding: 40px;
-    max-width: 800px; /* Improved width */
-    width: 100%;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-    z-index: 1;
-    opacity: 0.95;
-    transition: all 0.3s ease;
-  }
-
-  .hero-card:hover {
-    transform: translateY(-8px); /* Enhanced hover effect */
-  }
-
-  .hero-title {
-    font-size: 3.5rem; /* Larger title */
-    font-weight: 700;
-    margin-bottom: 20px;
-    line-height: 1.2;
-  }
-
-  .highlight {
-    color: #ffcc00 !important;
-  }
-
-  .hero-subtitle {
-    font-size: 1.8rem; /* Increased font size */
-    font-weight: 400;
-    margin-bottom: 30px;
-    opacity: 0.85;
-  }
-
-  /* Hero Buttons */
-  .hero-buttons {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Space between buttons */
-  }
-
-  .btn {
-    padding: 12px 30px;
-    font-size: 1.2rem; /* Larger button text */
-    border-radius: 8px;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    transition: all 0.3s ease-in-out;
-    font-weight: 600;
-  }
-
-  .btn-primary {
-    background: #ffcc00;
-    color: #000 !important;
-  }
-
-  .btn-primary:hover {
-    background: #e6b800;
-    transform: translateY(-3px);
-  }
-
-  .btn-secondary {
-    background: transparent;
-    border: 2px solid #fff;
-    color: #fff;
-  }
-
-  .btn-secondary:hover {
-    background: #fff;
-    color: #000;
-    transform: translateY(-3px);
-  }
-
-  .btn-download {
-    background: #28a745;
-    color: #fff !important;
-  }
-
-  .btn-download:hover {
-    background: #218838;
-    transform: translateY(-3px);
-  }
-
-  /* What I Do Section */
-  .what-i-do {
-    margin-top: 40px;
-    background: rgb(68, 51, 9) !important;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  }
-
-  .what-i-do h3 {
-    font-size: 2.2rem;
-    font-weight: 600;
-    color: #ffffff !important;
-  }
-
-  .what-i-do p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-  }
-
-  .what-i-do .btn {
-    font-size: 1.1rem;
-  }
-
-  /* Mobile Responsive */
-  @media (max-width: 768px) {
-    .hero-title {
-      font-size: 2.5rem;
-    }
-
-    .hero-subtitle {
-      font-size: 1.4rem;
-    }
-
-    .hero-card {
-      padding: 20px;
-    }
-
-    .what-i-do h3 {
-      font-size: 1.8rem;
-    }
-
-    .what-i-do p {
-      font-size: 1rem;
-    }
-  }
-</style>
-
-   
-    
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>Hi, I'm Ritesh Koirala, a passionate software engineer, digital marketer, and aspiring entrepreneur driven by a vision to leverage technology for meaningful change. With expertise in web development, API integrations, and digital marketing, I specialize in building seamless digital experiences and helping businesses establish a strong online presence.</p><br>
-
-          <p>Beyond my technical skills, I am deeply interested in financial literacy, business strategy, and innovation. My goal is to bring technology and ideas together to create solutions that improve lives and drive progress. Whether it's developing software, optimizing marketing strategies, or exploring new opportunities, I thrive on problem-solving, adaptability, and making an impact.</p><br>
-          
-          <p>I believe in continuous learning, embracing challenges, and using technology to shape a better future. Let’s connect and collaborate to create something extraordinary! 🚀</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/riteshh.jpeg" class="img-fluid" alt="">
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">Software Developer 🚀</p>
+          <h1>
+            Hi, I am Ritesh — the <span class="accent-gradient">controlled chaos</span>.
+          </h1>
+          <p class="hero-subtitle">
+            I’m Ritesh Koirala, an entrepreneurial, experiment‑friendly
+            software developer with over two years of experience in full‑stack
+            web development. I like to play with ideas, break things (on
+            purpose), and then rebuild them into practical, reliable
+            solutions.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary">View projects</a>
+            <a href="#contact" class="btn ghost">Let’s work together</a>
           </div>
-          <div class="col-lg-8 content">
-            <h2>Software Engineer &amp; Digital Marketing Enthustics.</h2>
-            <p class="fst-italic py-3">
-              Passionate about leveraging technology and digital strategies to create impactful solutions. With experience in software development and digital marketing, I focus on building seamless web experiences and helping businesses grow online.
+          <div class="hero-meta">
+            <div>
+              <span class="meta-label">Specialties</span>
+              <span class="meta-value" id="specialties">
+                PHP · Laravel · JavaScript · MySQL · AWS
+              </span>
+            </div>
+            <div>
+              <span class="meta-label">Currently</span>
+              <span class="meta-value">
+                MSc Computer Science student seeking an industrial placement.
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="avatar">
+            <div class="avatar-inner">
+              <img src="assests/img/profile-photo.jpg" alt="Ritesh Koirala" class="profile-photo" />
+            </div>
+          </div>
+          <div class="hero-card-body">
+            <h2>Full‑stack developer with a playful, practical mindset.</h2>
+            <p>
+              From database design to front‑end polish, I'm comfortable owning
+              the full lifecycle of a web application and collaborating across
+              teams to ship on time.
             </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>29 Jan 2002</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.riteshkoirala.com.np</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+977 9840031158</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Maitidevi-30, Kathamndu, Nepal</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>23</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor’s in Computer Science</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>riteshkoirala514@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                </ul>
+            <ul class="hero-points">
+              <li>End‑to‑end project delivery</li>
+              <li>Clean, maintainable PHP / Laravel code</li>
+              <li>Client‑focused communication & collaboration</li>
+            </ul>
+            <div class="hero-stack">
+              <span class="stack-label">Major Stack:</span>
+              <div class="stack-tags">
+                <span class="stack-tag">PHP</span>
+                <span class="stack-tag">Laravel</span>
+                <span class="stack-tag">Python</span>
+                <span class="stack-tag">FastAPI</span>
+                <span class="stack-tag">JavaScript</span>
+                <span class="stack-tag">MySQL</span>
+                <span class="stack-tag">AWS</span>
+                <span class="stack-tag">Docker</span>
               </div>
             </div>
-            <p class="py-3">
-              I believe in using technology to solve problems and create meaningful change. Whether it’s developing efficient software solutions or crafting digital marketing strategies, I am always eager to innovate, learn, and contribute to impactful projects.
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="section-header">
+          <h2>About</h2>
+          <p>
+            A software developer who combines solid fundamentals with hands‑on
+            experience in real projects.
+          </p>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I am a results‑driven software developer with experience in
+              full‑stack web development, particularly in PHP, Laravel,
+              JavaScript, and MySQL. I enjoy turning requirements into
+              scalable, reliable web applications and improving existing
+              systems for performance and maintainability.
+            </p>
+            <p>
+              Alongside my professional work, I am building a distributed
+              backend portfolio that includes URL shortening, secure JWT
+              authentication, real‑time messaging, cloud file storage, payment
+              integration, ML‑powered recommendations, microservices for
+              expense tracking, serverless image processing, centralized
+              logging, and API gateway patterns using Python, FastAPI, Redis,
+              PostgreSQL/MongoDB, Docker, RabbitMQ, and AWS.
+            </p>
+            <p>
+              On the front‑end side, I care about clean, intuitive interfaces:
+              applying visual hierarchy, spacing, and layout so users know
+              where to look and what to do next. I like designing consistent,
+              reusable components (buttons, cards, forms, dialogs), keeping
+              typography and color systems readable and on‑brand, and adding
+              small micro‑interactions (hover states, subtle animations, and
+              feedback) that make the experience feel smooth and modern across
+              devices.
+            </p>
+            <p>
+              I am comfortable working across the stack: building REST and
+              real‑time APIs, managing databases, deploying to AWS and
+              Cloudways, and collaborating with designers and stakeholders
+              using Agile practices. Currently, I am pursuing an MSc in
+              Computer Science at the University of East London and actively
+              looking for an industrial placement.
             </p>
           </div>
-        </div>
-
-      </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Happy Clients</strong> <span>Delighted with our services</span></p>
+          <div class="about-highlights">
+            <div class="about-card">
+              <span class="about-label">Mindset</span>
+              <p>
+                Entrepreneurial, curious, and willing to experiment to find
+                what actually works.
+              </p>
             </div>
-          </div>
-          <!-- End Stats Item -->
-    
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Projects Completed</strong> <span>Successful and impactful</span></p>
+            <div class="about-card">
+              <span class="about-label">Superpower</span>
+              <p>
+                Turning half‑baked, “crazy” ideas into structured projects
+                that can ship.
+              </p>
             </div>
-          </div>
-          <!-- End Stats Item -->
-    
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hours of Support</strong> <span>Dedicated customer assistance</span></p>
+            <div class="about-card">
+              <span class="about-label">Collaboration</span>
+              <p>
+                Honest, a bit playful, and straightforward when working with
+                clients, teams, and stakeholders.
+              </p>
             </div>
-          </div>
-          <!-- End Stats Item -->
-    
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="95" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Client Satisfaction</strong> <span>Consistently positive feedback</span></p>
-            </div>
-          </div>
-          <!-- End Stats Item -->
-        </div>
-      </div>
-    </section>
-    
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-        <p>Combining software engineering expertise with problem-solving skills to create impactful solutions.</p>
-      </div><!-- End Section Title -->
-    
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-    
-        <div class="row skills-content skills-animation">
-    
-          <div class="col-lg-6">
-    
-            <div class="progress">
-              <span class="skill"><span>HTML & CSS</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-            <div class="progress">
-              <span class="skill"><span>Laravel</span> <i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-            
-            <div class="progress">
-              <span class="skill"><span>MVC Architecture</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-            <div class="progress">
-              <span class="skill"><span>JavaScript</span> <i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-    
-            <div class="progress">
-              <span class="skill"><span>React.js</span> <i class="val">30%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-            <div class="progress">
-              <span class="skill"><span> PHP, Python, Java, C++</span> <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-            <!-- <div class="progress">
-              <span class="skill"><span>Node.js</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>End Skills Item -->
-            <div class="progress">
-              <span class="skill"><span>C-Panel</span> <i class="val">65%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-          </div>
-          
-    
-          <div class="col-lg-6">
-    
-            <div class="progress">
-              <span class="skill"><span>SQL & NoSQL Databases</span> <i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-    
-            <div class="progress">
-              <span class="skill"><span>API Development & Integration</span> <i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-    
-            <div class="progress">
-              <span class="skill"><span>Meta Ads & Facebook Ads</span> <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-    
-            <div class="progress">
-              <span class="skill"><span>Graphic Design (Canva, Photoshop)</span> <i class="val">45%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-            <div class="progress">
-              <span class="skill"><span>Git & Jira</span> <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-                     
-            
-            <div class="progress">
-              <span class="skill"><span>Django</span> <i class="val">35%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-            
-          </div>
-    
-        </div>
-    
-        
-    
-      </div>
-    
-    </section><!-- /Skills Section -->
-    
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>Experienced software engineer specializing in full-stack development, API integration, and cloud-based solutions.</p>
-      </div><!-- End Section Title -->
-    
-      <div class="container">
-    
-        <div class="row">
-    
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Summary</h3>
-            <div class="resume-item pb-0">
-              <h4>Ritesh Koirala</h4>
-              <p><em>Enthusiastic software developer with over 2 years of experience in designing and developing applications using PHP, Laravel, JavaScript, Python, and cloud-based technologies. Passionate about problem-solving and innovation.</em></p>
-              <ul>
-                <li>Ratopul, Kathmandu, Nepal</li>
-                <li>+977 9840031158</li>
-                <li>riteshkoirala514@gmail.com</li>
-              </ul>
-            </div><!-- End Resume Item -->
-    
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>BSc (Hons) Computing – Major in Software Engineering</h4>
-              <h5>2021 - 2024</h5>
-              <p><em>University of Northampton</em></p>
-              <p>Graduated with First-Class Honors, specializing in full-stack development, project management, and database systems.</p>
-            </div><!-- End Resume Item -->
-    
-            <h3 class="resume-title">Projects</h3>
-            <div class="resume-item">
-              <h4>IT Career Recommendation System</h4>
-              <p><em>PHP/Laravel, JS, jQuery, Ajax, Python, HTML/CSS</em></p>
-              <ul>
-                <li>A platform to recommend job opportunities based on users' skills and provide practice materials.</li>
-              </ul>
-            </div><!-- End Project Item -->
-    
-            <div class="resume-item">
-              <h4>Auction House</h4>
-              <p><em>PHP/Laravel, JS, HTML/CSS</em></p>
-              <ul>
-                <li>A web-based auction platform where users can list and bid on items in different categories.</li>
-              </ul>
-            </div><!-- End Project Item -->
-    
-            <div class="resume-item">
-              <h4>Job Portal</h4>
-              <p><em>PHP/Laravel, JS, HTML/CSS</em></p>
-              <ul>
-                <li>A job posting and recruitment platform connecting employers with potential candidates.</li>
-              </ul>
-            </div><!-- End Project Item -->
-          </div>
-    
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            
-            <div class="resume-item">
-              <h4>Freelance Software Developer</h4>
-              <h5>Sept 2024 – Present</h5>
-              <ul>
-                <li>Developed and maintained websites using PHP/Laravel, JavaScript, React, and jQuery.</li>
-                <li>Managed hosting and deployments using C-Panel and Cloudways.</li>
-                <li>Worked on API integrations and database optimization.</li>
-                <li>Developed websites like dev.gbho.org and metroparkny.com.</li>
-              </ul>
-            </div><!-- End Resume Item -->
-    
-            <div class="resume-item">
-              <h4>Associate Software Engineer</h4>
-              <h5>May 2023 – June 2024</h5>
-              <p><em>Future Education of Science and Technology (FEST PVT LTD), Kathmandu, Nepal</em></p>
-              <ul>
-                <li>Developed and maintained web applications using PHP and Laravel.</li>
-                <li>Integrated front-end with back-end using JavaScript, jQuery, and AJAX.</li>
-                <li>Implemented REST APIs for seamless communication between components.</li>
-                <li>Managed database performance optimization using MySQL.</li>
-              </ul>
-            </div><!-- End Resume Item -->
-    
-            <div class="resume-item">
-              <h4>Intern</h4>
-              <h5>Feb 2023 – April 2023</h5>
-              <p><em>Buddha Technology, Jawlakhel, Lalitpur</em></p>
-              <ul>
-                <li>Learned Laravel framework for web application development.</li>
-                <li>Utilized Jira for project management and task tracking.</li>
-                <li>Assisted senior developers with tasks and code reviews.</li>
-              </ul>
-            </div><!-- End Resume Item -->
           </div>
         </div>
-      </div>
-    </section><!-- /Resume Section -->
-    
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section light-background">
+      </section>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>My Portfolio</h2>
-        <p>Welcome to my portfolio, where creativity meets innovation. Here, you'll find a collection of my best work, showcasing my skills, passion, and dedication to delivering exceptional results. Each project reflects my commitment to excellence and my drive to bring ideas to life. Explore and see how I can help transform your vision into reality.</p>
-      </div><!-- End Section Title -->
-      
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-web_app">Web_Application</li>
-            <li data-filter=".filter-app">Apps</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books I've Read</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-           
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web_app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/atomic/metro.png" class="img-fluid" alt="" style="height: 250px !important;">
-                <div class="portfolio-info">
-                  <h4>Web App 2</h4>
-                  <p>Real state office renting company.</p>
-                  <a href="assets/img/atomic/metro.png" title="Real state office renting company." data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://metroparkny.com" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/atomic/Artboard_2.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 2</h4>
-                  <p>Design-2 created for school.</p>
-                  <a href="assets/img/atomic/Artboard_2.png" title="Design-2 created for school." data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web_app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/atomic/it.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Web App 3</h4>
-                  <p>IT career recommendation Syatem - Final Year College Project.</p>
-                  <a href="assets/img/atomic/it.png" title="IT career recommendation Syatem- Final Year College Project." data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/Riteshkoirala/CareerHunt" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web_app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/atomic/career.avif" class="img-fluid" alt="" style="height: 278px !important;">
-                <div class="portfolio-info">
-                  <h4>Web App 5</h4>
-                  <p>Job Portel.</p>
-                  <a href="assets/img/atomic/career.avif" title="Job portel where the recuiter can post the job and seeker can apply through here." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/Riteshkoirala/Talent_Hunt" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/atomic/quiz_app.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>Quiz and Dice Roller Application.</p>
-                  <a href="assets/img/atomic/quiz_app.jpg" title="Quiz and Dice Roller Application." data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/Riteshkoirala/Android-Application/tree/master/StarMedia2" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web_app">
-              <div class="portfolio-content h-100"> 
-                <img src="assets/img/atomic/gbho.png" class="img-fluid" alt="" style="height: 250px !important;" >
-                <div class="portfolio-info">
-                  <h4>Web App 1</h4>
-                  <p>GBHO is a non-profit organization.</p>
-                  <a href="assets/img/atomic/gbho.png" title="GBHO is a non-profit organization." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://gbho.org" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/atomic/starmedia.webp" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 2</h4>
-                  <p>Article Posting and reaction application.</p>
-                  <a href="assets/img/atomic/starmedia.webp" title="Article Posting and reaction application." data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/Riteshkoirala/Android-Application/tree/master/StarMedia2" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web_app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/atomic/vvvvvvvv.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Web App 6</h4>
-                  <p>Application For Motion Detection.</p>
-                  <a href="assets/img/atomic/vvvvvvvv.png" title="Application For Motion Detection." data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/Riteshkoirala/motion-detection" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/atomic/ai.png"  class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 1</h4>
-                  <p>Report on Ai Good or Bad - by me.</p>
-                  <a href="assets/img/atomic/ai.png" title="Report on Ai Good or Bad - by me." data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/Riteshkoirala/21422051_AI_RiteshKoirala" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/atomic/Artboard_1.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 1</h4>
-                  <p>Design-1 created for school.</p>
-                  <a href="assets/img/atomic/Artboard_1.png" title="Design-1 created for school." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-           
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web_app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/atomic/auction.avif" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Web App 4</h4>
-                  <p>Auction App where we can add, edit, catogarize and bid.</p>
-                  <a href="assets/img/atomic/auction.avif" title="Auction App where we can add, edit, catogarize and bid." data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/Riteshkoirala/auction-house" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/atomic/atom.webp" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 1</h4>
-                  <p>This was my forst book and the way it tells to implement the small changes is awesome.</p>
-                  <a href="assets/img/atomic/atom.webp" title="This was my forst book and the way it tells to implement the small changes is awesome." data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/atomic/hard.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 2</h4>
-                  <p>This book taught me a lot about the harship a person should go through.</p>
-                  <a href="assets/img/atomic/hard.jpg" title="This book taught me a lot about the harship a person should go through." data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/atomic/friend.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 3</h4>
-                  <p>How to win and influence people.</p>
-                  <a href="assets/img/atomic/friend.jpg" title="I am an introvert so, i hope to get a lot from this book" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-           
-
-          </div><!-- End Portfolio Container -->
-
+      <section id="founders" class="section">
+        <div class="section-header">
+          <h2>Connect With Entrepreneurial Minds</h2>
+          <p>
+            If you’re a builder, founder, or just someone who loves trying
+            ideas, this is the space for us to connect.
+          </p>
         </div>
-
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>From innovative web development to effective marketing strategies, I offer a range of services designed to help businesses and individuals grow in the digital world. Every project I take on is personalized to meet the unique needs and goals of my clients, ensuring the highest quality results.</p>
-      </div><!-- End Section Title -->
-    
-      <div class="container">
-    
-        <div class="row gy-4">
-    
-          <!-- Web Application Development -->
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-laptop"></i></div>
-            <div>
-              <h4 class="title"><a  class="stretched-link">Web Application Development</a></h4>
-              <p class="description">I specialize in creating responsive and high-performing web applications tailored to your specific needs. Whether you need a custom platform or an upgrade to your existing one, I ensure the perfect blend of design and functionality.</p>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I naturally think like a builder: I enjoy taking messy ideas,
+              testing them quickly, and turning the good ones into working
+              products. I’m comfortable with ambiguity, changing directions,
+              and the playful “what if we try this?” phase of building.
+            </p>
+            <p>
+              If you’re also entrepreneurial and you want to share ideas,
+              swap lessons, or explore future collaborations, I’m always open
+              to talking with people who think the same way.
+            </p>
+          </div>
+          <div class="about-highlights">
+            <div class="about-card">
+              <span class="about-label">Who I vibe with</span>
+              <p>
+                Founders, indie hackers, students, and builders who enjoy
+                experimenting, learning in public, and taking smart risks.
+              </p>
             </div>
-          </div><!-- End Service Item -->
-    
-          <!-- App Development -->
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-phone"></i></div>
-            <div>
-              <h4 class="title"><a  class="stretched-link">App Development</a></h4>
-              <p class="description">I build intuitive and user-friendly mobile applications for both Android and iOS platforms. Let me help you reach your audience on the go with an app that truly meets their needs.</p>
+            <div class="about-card">
+              <span class="about-label">What we can do</span>
+              <p>
+                Chat about ideas, share feedback, pair on small experiments,
+                or simply expand our network of like‑minded people.
+              </p>
             </div>
-          </div><!-- End Service Item -->
-    
-          <!-- Meta Ads -->
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-graph-up"></i></div>
-            <div>
-              <h4 class="title"><a  class="stretched-link">Meta Ads</a></h4>
-              <p class="description">With a targeted Meta (Facebook & Instagram) advertising strategy, I can help your brand grow and generate results through carefully crafted ad campaigns designed to reach your audience effectively.</p>
-            </div>
-          </div><!-- End Service Item -->
-    
-          <!-- Graphic Designing -->
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon flex-shrink-0"><i class="bi bi-paint-bucket"></i></div>
-            <div>
-              <h4 class="title"><a  class="stretched-link">Graphic Designing</a></h4>
-              <p class="description">From logos to banners, my graphic design services are all about making your brand stand out. I work closely with clients to create visuals that resonate with their target audience.</p>
-            </div>
-          </div><!-- End Service Item -->
-    
-          <!-- Marketing Strategy -->
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon flex-shrink-0"><i class="bi bi-lightning-charge"></i></div>
-            <div>
-              <h4 class="title"><a  class="stretched-link">Marketing Strategy</a></h4>
-              <p class="description">I offer personalized marketing strategies that include content, SEO, and paid campaigns. Let’s work together to build a roadmap that brings real results for your business.</p>
-            </div>
-          </div><!-- End Service Item -->
-    
-          <!-- Online Presence Strategy -->
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon flex-shrink-0"><i class="bi bi-globe"></i></div>
-            <div>
-              <h4 class="title"><a  class="stretched-link">Online Presence Strategy</a></h4>
-              <p class="description">I specialize in creating comprehensive online strategies that encompass social media engagement, SEO, and web design. Let’s work to establish your brand’s strong digital presence and connect with your audience.</p>
-            </div>
-          </div><!-- End Service Item -->
-    
-        </div>
-    
-      </div>
-    
-    </section><!-- /Services Section -->
-    
-
-    <!-- Testimonials Section -->
-    <section id="blogs" class="blog-profiles section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>My Blog Profiles</h2>
-        <p>Explore my content on top tech platforms.</p>
-      </div><!-- End Section Title -->
-    
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-    
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
-                },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 20
-                }
-              }
-            }
-          </script>
-          <div id="blogs" class="swiper-wrapper">
-            <!-- Blog Profile Cards -->
-            <div class="swiper-slide" style="width: 300px; padding: 20px; border: 1px solid #ddd; border-radius: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); margin: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-              <a href="https://medium.com/@riteshkoirala514" target="_blank" class="blog-item" style="display: flex; flex-direction: column; align-items: center; text-align: center; text-decoration: none; color: inherit;">
-                <img src="assets/img/blogs/medium.jpg" class="blog-img" alt="Medium" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                <h3 style="margin-top: 15px; font-size: 22px; font-weight: bold;">Medium</h3>
-                <p style="font-size: 16px; color: #08a9d1;">Read my latest articles and insights.</p>
-              </a>
-            </div>
-          
-            <div class="swiper-slide" style="width: 300px; padding: 20px; border: 1px solid #ddd; border-radius: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); margin: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-              <a href="https://stackoverflow.com/users/29854163/ritesh-koirala" target="_blank" class="blog-item" style="display: flex; flex-direction: column; align-items: center; text-align: center; text-decoration: none; color: inherit;">
-                <img src="assets/img/blogs/stack.jpeg" class="blog-img" alt="Stack Overflow" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                <h3 style="margin-top: 15px;">Stack Overflow</h3>
-                <p style="font-size: 16px;">Check out my answers and contributions.</p>
-              </a>
-            </div>
-          
-            <div class="swiper-slide" style="width: 300px; padding: 20px; border: 1px solid #ddd; border-radius: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); margin: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-              <a href="https://www.quora.com/profile/Ritesh-Koirala-6" target="_blank" class="blog-item" style="display: flex; flex-direction: column; align-items: center; text-align: center; text-decoration: none; color: inherit;">
-                <img src="assets/img/blogs/ouara.png" class="blog-img" alt="Quora" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                <h3 style="margin-top: 15px;">Quora</h3>
-                <p style="font-size: 16px;">Follow my tech discussions.</p>
-              </a>
-            </div>
-          
-            <div class="swiper-slide" style="width: 300px; padding: 20px; border: 1px solid #ddd; border-radius: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); margin: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-              <a href="https://www.pinterest.com/riteshkoirala514/" target="_blank" class="blog-item" style="display: flex; flex-direction: column; align-items: center; text-align: center; text-decoration: none; color: inherit;">
-                <img src="assets/img/blogs/pinterest.png" class="blog-img" alt="Pinterest" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                <h3 style="margin-top: 15px;">Pinterest</h3>
-                <p style="font-size: 16px;">Explore my tech collections.</p>
-              </a>
-            </div>
-          
-            <div class="swiper-slide" style="width: 300px; padding: 20px; border: 1px solid #ddd; border-radius: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); margin: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-              <a href="https://discord.gg/mynSyJsz" target="_blank" class="blog-item" style="display: flex; flex-direction: column; align-items: center; text-align: center; text-decoration: none; color: inherit;">
-                <img src="assets/img/blogs/discord.jpg" class="blog-img" alt="Discord" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                <h3 style="margin-top: 15px;">Discord</h3>
-                <p style="font-size: 16px;">Join my tech community.</p>
-              </a>
-            </div>
-          
-            <div class="swiper-slide" style="width: 300px; padding: 20px; border: 1px solid #ddd; border-radius: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); margin: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-              <a href="https://github.com/Riteshkoirala" target="_blank" class="blog-item" style="display: flex; flex-direction: column; align-items: center; text-align: center; text-decoration: none; color: inherit;">
-                <img src="assets/img/blogs/github.png" class="blog-img" alt="GitHub" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                <h3 style="margin-top: 15px;">GitHub</h3>
-                <p style="font-size: 16px;">Explore my open-source projects.</p>
-              </a>
-            </div>
-          
-            <div class="swiper-slide" style="width: 300px; padding: 20px; border: 1px solid #ddd; border-radius: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); margin: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-              <a href="https://dev.to/ritesh_koirala_cdd1518003" target="_blank" class="blog-item" style="display: flex; flex-direction: column; align-items: center; text-align: center; text-decoration: none; color: inherit;">
-                <img src="assets/img/blogs/dev.jpeg" class="blog-img" alt="Dev.to" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                <h3 style="margin-top: 15px;">Dev.to</h3>
-                <p style="font-size: 16px;">Read my developer blogs.</p>
-              </a>
-            </div>
-          
-            <div class="swiper-slide" style="width: 300px; padding: 20px; border: 1px solid #ddd; border-radius: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); margin: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-              <a href="https://www.linkedin.com/in/riteshkoirala/" target="_blank" class="blog-item" style="display: flex; flex-direction: column; align-items: center; text-align: center; text-decoration: none; color: inherit;">
-                <img src="assets/img/blogs/link.png" class="blog-img" alt="LinkedIn" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                <h3 style="margin-top: 15px;">LinkedIn</h3>
-                <p style="font-size: 16px;">Check out my professional updates.</p>
-              </a>
-            </div>
-          
-            <div class="swiper-slide" style="width: 300px; padding: 20px; border: 1px solid #ddd; border-radius: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); margin: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-              <a href="https://x.com/Ritesh_k001" target="_blank" class="blog-item" style="display: flex; flex-direction: column; align-items: center; text-align: center; text-decoration: none; color: inherit;">
-                <img src="assets/img/blogs/Twitter.jpg" class="blog-img" alt="Twitter" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                <h3 style="margin-top: 15px;">Twitter</h3>
-                <p style="font-size: 16px;">Follow my tech tweets.</p>
-              </a>
-            </div>
-          
-          <style>
-            .swiper-slide:hover {
-              transform: translateY(-5px);
-              box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-            }
-            .swiper-slide a {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              text-align: center;
-              text-decoration: none;
-              color: inherit;
-              transition: transform 0.3s ease;
-            }
-          </style>
-          
-
-    </div>
-          <div class="swiper-pagination"></div>
-        </div>
-    
-      </div>
-    
-    </section><!-- /Blog Profiles Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-<p>If you have any inquiries or would like to collaborate, feel free to reach out.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-5">
-
-            <div class="info-wrap">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>Maitidevi-30, Kathmandu, Nepal</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Call Me</h3>
-                  <p>+977 9840031158</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email Me</h3>
-                  <p>riteshkoirala514@gmail.com</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.081459067856!2d85.3280584760393!3d27.70540942543378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190a4d6c9a8d%3A0x7a8b0a2694c5e1a1!2sMaitidevi%2C%20Kathmandu%2044600%2C%20Nepal!5e0!3m2!1sen!2snp!4v1708750000000!5m2!1sen!2snp" 
-frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+            <div class="about-card">
+              <span class="about-label">How to reach me</span>
+              <p>
+                Use the contact section or any of my socials below and mention
+                you’re reaching out as a fellow founder or builder.
+              </p>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="col-lg-7">
-           <!-- EmailJS Form -->
-<form id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-  <div class="row gy-4">
+      <section id="skills" class="section">
+        <div class="section-header">
+          <h2>Skills</h2>
+          <p>Technologies and tools I use to build and ship web applications.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Programming & Backend Engineering</h3>
+            <p>
+              Building backend services and APIs with solid coding principles and maintainable design.
+            </p>
+            <ul>
+              <li>Python (primary), FastAPI</li>
+              <li>REST API design and implementation</li>
+              <li>OOP, modular coding, clean architecture</li>
+              <li>Data parsing and validation</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Databases & Data Persistence</h3>
+            <p>
+              Designing reliable, efficient data layers for transactional and analytical workloads.
+            </p>
+            <ul>
+              <li>PostgreSQL and MongoDB</li>
+              <li>Schema design and indexing strategies</li>
+              <li>Transaction logging and consistency</li>
+              <li>ORM usage and query optimisation</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Distributed Systems & Microservices</h3>
+            <p>
+              Architecting independent services that communicate reliably at scale.
+            </p>
+            <ul>
+              <li>Services for auth, messaging, recommendations, payments, logging</li>
+              <li>Service‑to‑service communication patterns</li>
+              <li>Message queues with RabbitMQ / Redis</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Cloud & DevOps</h3>
+            <p>
+              Packaging, deploying, and automating backend systems in the cloud.
+            </p>
+            <ul>
+              <li>Docker containerisation and Docker Compose orchestration</li>
+              <li>GitHub Actions for CI/CD pipelines</li>
+              <li>AWS S3, Lambda, API Gateway, IAM roles</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Real‑Time & Event‑Driven Systems</h3>
+            <p>
+              Delivering low‑latency, reactive features and workflows.
+            </p>
+            <ul>
+              <li>WebSockets for real‑time communication</li>
+              <li>async/await patterns for concurrency</li>
+              <li>Event triggers with Lambda and callback handling</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Security & Authentication</h3>
+            <p>
+              Protecting APIs and data with modern security patterns.
+            </p>
+            <ul>
+              <li>JWT token‑based authentication</li>
+              <li>RBAC (Role‑Based Access Control)</li>
+              <li>Rate limiting and API access control</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Machine Learning & Data Intelligence</h3>
+            <p>
+              Adding intelligence and personalised behaviour to systems.
+            </p>
+            <ul>
+              <li>scikit‑learn for ML pipelines</li>
+              <li>TF‑IDF and statistical analysis</li>
+              <li>Behaviour‑based recommendation systems</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Testing & Quality Engineering</h3>
+            <p>
+              Ensuring systems are correct, reliable, and resilient under load.
+            </p>
+            <ul>
+              <li>Unit and integration testing</li>
+              <li>Load and stress testing</li>
+              <li>Mocking and failure‑scenario simulation</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Monitoring & Observability</h3>
+            <p>
+              Making systems transparent and measurable in production.
+            </p>
+            <ul>
+              <li>Prometheus metrics and alerting</li>
+              <li>Grafana dashboards and visualisations</li>
+              <li>Log tracing and system health monitoring</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Professional Engineering Practices</h3>
+            <p>
+              Working like a production‑grade engineer in real projects.
+            </p>
+            <ul>
+              <li>Agile development and sprint‑based delivery</li>
+              <li>Git workflows and structured commits</li>
+              <li>Documentation, API specs, architecture planning</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-      <div class="col-md-6">
-          <label for="name-field" class="pb-2">Your Name</label>
-          <input type="text" name="name" id="name-field" class="form-control" required>
-      </div>
+      <section id="experience" class="section">
+        <div class="section-header">
+          <h2>Experience</h2>
+          <p>Recent roles and how I’ve been growing as a developer.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Freelance Software Developer</h3>
+                <span class="timeline-meta">Remote · Sep 2024 – Jan 2025</span>
+              </div>
+              <ul>
+                <li>
+                  Designed and developed custom web solutions for global clients
+                  using PHP, Laravel, React, Wix, and JavaScript.
+                </li>
+                <li>
+                  Managed deployments on Cloudways, configured domains/hosting,
+                  and maintained Git/GitLab repositories.
+                </li>
+                <li>
+                  Handled client communication, time tracking, and post‑launch
+                  support for ongoing improvements.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Associate Software Engineer</h3>
+                <span class="timeline-meta">FEST PVT. LTD. · May 2023 – Jun 2024</span>
+              </div>
+              <ul>
+                <li>
+                  Developed and maintained Laravel‑based web applications and
+                  APIs with clean, reusable code.
+                </li>
+                <li>
+                  Collaborated with front‑end teams to build responsive UIs and
+                  ensure smooth end‑to‑end user flows.
+                </li>
+                <li>
+                  Managed MySQL databases, deployments on AWS/cPanel, and
+                  delivered features in Agile sprints using Jira.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Intern, Buddha Technology</h3>
+                <span class="timeline-meta">Feb 2023 – Apr 2023</span>
+              </div>
+              <ul>
+                <li>
+                  Learned and applied the Laravel framework on real client
+                  projects under senior developer guidance.
+                </li>
+                <li>
+                  Assisted with debugging, backend improvements, and basic API
+                  /database tasks.
+                </li>
+                <li>
+                  Used Jira in Agile sprints to track work, support testing,
+                  and contribute to documentation.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Other Professional Experience – Hospitality</h3>
+                <span class="timeline-meta">WAM Hospitality · Chelsea Stadium · Sep 2025 – Present</span>
+              </div>
+              <ul>
+                <li>
+                  Work as barista, waiter, and runner in a fast‑paced stadium
+                  hospitality environment at Chelsea Stadium in London.
+                </li>
+                <li>
+                  Serve guests to a high standard, balancing speed, accuracy,
+                  and professionalism during peak event times.
+                </li>
+                <li>
+                  Strengthened soft skills: teamwork, communication, customer
+                  service, and handling pressure calmly.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <div class="col-md-6">
-          <label for="email-field" class="pb-2">Your Email</label>
-          <input type="email" class="form-control" name="email" id="email-field" required>
-      </div>
+      <section id="projects" class="section">
+        <div class="section-header">
+          <h2>Projects</h2>
+          <p>Selected work that shows what I build and how I think.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-tag">Academic</div>
+            <h3>Job Recommendation System</h3>
+            <p>
+              A Laravel and PHP‑based recommendation system that suggests IT
+              career paths and opportunities based on user skills and
+              preferences, supported by Python and JavaScript for analysis and
+              interactivity.
+            </p>
+            <ul>
+              <li>Implemented user profiles and skill matching logic</li>
+              <li>Integrated database‑driven recommendation workflows</li>
+              <li>Delivered as part of BSc dissertation with first‑class result</li>
+            </ul>
+            <div class="project-meta">
+              <span>PHP · Laravel · MySQL · Python · JavaScript</span>
+            </div>
+          </article>
 
-      <div class="col-md-12">
-          <label for="subject-field" class="pb-2">Subject</label>
-          <input type="text" class="form-control" name="subject" id="subject-field" required>
-      </div>
+          <article class="project-card">
+            <div class="project-tag">Client</div>
+            <h3>Business Websites (Freelance)</h3>
+            <p>
+              Designed and developed custom web solutions for international
+              clients, including sites such as dev.gbho.org and
+              metroparkmy.com, focusing on usability, performance, and simple
+              content management.
+            </p>
+            <ul>
+              <li>Built responsive frontends with Bootstrap and Tailwind</li>
+              <li>Configured hosting, domains, and deployments via Cloudways</li>
+              <li>Maintained Git‑based workflows for client updates</li>
+            </ul>
+            <div class="project-meta">
+              <span>PHP · Laravel · JavaScript · Cloudways</span>
+            </div>
+          </article>
+        </div>
+      </section>
 
-      <div class="col-md-12">
-          <label for="message-field" class="pb-2">Message</label>
-          <textarea class="form-control" name="message" rows="10" id="message-field" required></textarea>
-      </div>
+      <section id="solo-series" class="section">
+        <div class="section-header">
+          <h2>Solo Backend Series</h2>
+          <p>
+            A distributed ecosystem of solo projects, each focused on a core
+            backend or cloud capability.
+          </p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-tag">Solo</div>
+            <h3>URL Shortener Service</h3>
+            <p>
+              Backend service where long URLs are converted into short,
+              shareable Base62 keys and redirected efficiently.
+            </p>
+            <ul>
+              <li>Python + FastAPI REST API with clean routing</li>
+              <li>PostgreSQL schema with indexed lookups</li>
+              <li>Custom hashing, validation, and unit tests</li>
+            </ul>
+            <div class="project-meta">
+              <span>APIs · PostgreSQL · Hashing</span>
+            </div>
+          </article>
 
-      <div class="col-md-12 text-center">
-          <div class="loading">Loading...</div>
-          <!-- <div class="error-message"></div> -->
-          <div class="sent-message">Your message has been sent. Thank you!</div>
+          <article class="project-card">
+            <div class="project-tag">Solo</div>
+            <h3>Secure Auth & User Access</h3>
+            <p>
+              Authentication and authorisation system with JWT tokens, secure
+              password storage, and role‑based access control.
+            </p>
+            <ul>
+              <li>JWT access & refresh tokens with bcrypt hashing</li>
+              <li>RBAC rules and protected routes via middleware</li>
+              <li>Session validation and structured error handling</li>
+            </ul>
+            <div class="project-meta">
+              <span>Security · Auth · RBAC</span>
+            </div>
+          </article>
 
-          <button type="submit">Send Message</button>
-      </div>
+          <article class="project-card">
+            <div class="project-tag">Solo</div>
+            <h3>Real‑Time Chat Platform</h3>
+            <p>
+              WebSocket‑based messaging platform with real‑time chat,
+              presence, and persistent message history.
+            </p>
+            <ul>
+              <li>WebSockets with async/await handlers</li>
+              <li>Redis pub/sub for scalable message fan‑out</li>
+              <li>Typing indicators, presence, and reconnect logic</li>
+            </ul>
+            <div class="project-meta">
+              <span>Realtime · WebSockets · Redis</span>
+            </div>
+          </article>
 
+          <article class="project-card">
+            <div class="project-tag">Solo</div>
+            <h3>Payment & Billing Integration</h3>
+            <p>
+              Payment gateway integration for secure checkout, invoicing, and
+              transaction history.
+            </p>
+            <ul>
+              <li>Stripe checkout sessions and webhook verification</li>
+              <li>Transaction and invoice logging with audit trail</li>
+              <li>Handling refunds, partial payments, and failures</li>
+            </ul>
+            <div class="project-meta">
+              <span>Stripe · Webhooks · Billing</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Solo</div>
+            <h3>ML Recommendation Engine</h3>
+            <p>
+              Behaviour‑based recommendation service powered by scikit‑learn
+              and text feature engineering.
+            </p>
+            <ul>
+              <li>TF‑IDF vectorisation and cosine similarity</li>
+              <li>Model training, tuning, and evaluation</li>
+              <li>FastAPI inference endpoint for real‑time use</li>
+            </ul>
+            <div class="project-meta">
+              <span>ML · scikit‑learn · Recommendations</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Solo</div>
+            <h3>Microservices Expense Tracker</h3>
+            <p>
+              Expense tracking platform refactored into multiple independent,
+              containerised services.
+            </p>
+            <ul>
+              <li>Auth, expenses, reports, analytics microservices</li>
+              <li>RabbitMQ for async communication and decoupling</li>
+              <li>Dockerised services designed for horizontal scaling</li>
+            </ul>
+            <div class="project-meta">
+              <span>Microservices · RabbitMQ · Docker</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Solo</div>
+            <h3>Serverless Image Pipeline</h3>
+            <p>
+              Serverless image processing pipeline triggered by uploads to a
+              cloud storage bucket.
+            </p>
+            <ul>
+              <li>AWS S3 events triggering Lambda functions</li>
+              <li>Image resize/convert and metadata updates</li>
+              <li>Least‑privilege IAM setup and cold‑start tuning</li>
+            </ul>
+            <div class="project-meta">
+              <span>AWS · Lambda · S3</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Solo</div>
+            <h3>Observability & Monitoring Stack</h3>
+            <p>
+              Centralised observability layer for backend services with
+              metrics, dashboards, and alerts.
+            </p>
+            <ul>
+              <li>Prometheus metrics for latency, throughput, errors</li>
+              <li>Grafana dashboards and alert rules</li>
+              <li>Structured logs and correlation IDs for tracing</li>
+            </ul>
+            <div class="project-meta">
+              <span>Prometheus · Grafana · Logging</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Solo</div>
+            <h3>API Gateway & Rate Limiting</h3>
+            <p>
+              Central API gateway fronting internal services with traffic
+              control and access policies.
+            </p>
+            <ul>
+              <li>Nginx/Kong‑style gateway with routing and load balancing</li>
+              <li>Per‑user quotas, API keys, and IP‑based throttling</li>
+              <li>Protection against brute‑force and burst traffic</li>
+            </ul>
+            <div class="project-meta">
+              <span>Gateways · Rate Limiting · Security</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="group-projects" class="section">
+        <div class="section-header">
+          <h2>Group Projects – Team Lead</h2>
+          <p>
+            Collaborative projects where I led teams, owned architecture, and
+            delivered real working systems.
+          </p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-tag">Team Lead</div>
+            <h3>Smart Invoice Processing System</h3>
+            <p>
+              Group project where I acted as group leader and lead backend
+              engineer, delivering an AI‑driven invoice automation platform
+              combining OCR, classification, and a robust API layer.
+            </p>
+            <ul>
+              <li>
+                Led a team of developers, managed sprints, assigned tasks, and
+                reviewed/merged pull requests.
+              </li>
+              <li>
+                Designed overall system architecture and data flow between
+                upload services, OCR, AI, and storage.
+              </li>
+              <li>
+                Implemented backend APIs, invoice upload pipeline, OCR
+                extraction (Tesseract/AWS Textract), and AI categorisation
+                using scikit‑learn and rules.
+              </li>
+              <li>
+                Created database schema for parsed invoice details, set up
+                Docker environment, deployment pipelines, and unit tests.
+              </li>
+            </ul>
+            <div class="project-meta">
+              <span>Leadership · OCR/AI Pipelines · Laravel/Python · Docker</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Team Lead</div>
+            <h3>Big Data Analytics Platform</h3>
+            <p>
+              Group big‑data project where I coordinated the data engineering
+              work, from ingestion to analysis and visualisation, using
+              Spark‑based tooling.
+            </p>
+            <ul>
+              <li>
+                Supervised a data‑focused team, delegated tasks, enforced Git
+                workflow discipline, and coordinated with data scientists.
+              </li>
+              <li>
+                Selected datasets (e.g. Amazon Reviews, KDD CUP) and designed
+                ingestion pipelines using PySpark and Hadoop/HDFS.
+              </li>
+              <li>
+                Implemented cleaning, normalisation, and regex‑based feature
+                extraction plus Spark SQL queries.
+              </li>
+              <li>
+                Compared RDD vs DataFrame performance, produced visual
+                analytics (Matplotlib/Seaborn/Grafana), and delivered insight
+                presentations.
+              </li>
+            </ul>
+            <div class="project-meta">
+              <span>Big Data · Spark/Hadoop · Analytics · Team Leadership</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Team Lead</div>
+            <h3>Bachelor's Course Management System</h3>
+            <p>
+              Academic capstone‑style project where I owned the architecture
+              and led a small team to build a full‑stack course management
+              platform for students, teachers, and admins.
+            </p>
+            <ul>
+              <li>
+                Defined project scope, feature list, and delivery milestones
+                while coordinating teammate modules.
+              </li>
+              <li>
+                Designed relational database schema for courses, students,
+                faculty, and enrolments in MySQL.
+              </li>
+              <li>
+                Implemented authentication and role system (admin/teacher/
+                student), session management, and core CRUD flows in Laravel.
+              </li>
+              <li>
+                Reviewed teammates' code, maintained coding standards, and
+                ensured validation, error handling, and final demo quality.
+              </li>
+            </ul>
+            <div class="project-meta">
+              <span>Laravel · MySQL · Access Control · Academic Leadership</span>
+            </div>
+          </article>
+        </div>
+        <p style="margin-top: 14px; font-size: 13px; color: var(--text-soft);">
+          Collectively, these group projects show that I can lead engineering
+          teams, own architecture, and still be hands‑on with backend, data,
+          and deployment work.
+        </p>
+      </section>
+
+      <section id="contact" class="section section-contact">
+        <div class="section-header">
+          <h2>Contact</h2>
+          <p>
+            For freelance work, early‑stage collaborations, or interesting
+            backend problems, feel free to reach out.
+          </p>
+        </div>
+        <div class="contact-card">
+          <p>
+            I’m currently studying MSc Computer Science at the University of
+            East London and open to software development roles, industrial
+            placements, freelance backend projects, and collaborations with
+            founders and other builders.
+          </p>
+          <div class="contact-actions">
+            <a href="mailto:riteshkoirala514@gmail.com" class="btn primary">
+              Email me
+            </a>
+            <a href="https://www.linkedin.com/in/riteshkoirala/" target="_blank" rel="noreferrer" class="btn ghost">
+              View LinkedIn
+            </a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noreferrer" class="btn ghost">
+              Instagram
+            </a>
+            <a href="https://linktr.ee/yourprofile" target="_blank" rel="noreferrer" class="btn ghost">
+              Linktree
+            </a>
+            <a href="https://wa.me/447352132097" target="_blank" rel="noreferrer" class="btn ghost">
+              WhatsApp
+            </a>
+            <a href="https://github.com/yourusername" target="_blank" rel="noreferrer" class="btn ghost">
+              GitHub
+            </a>
+          </div>
+          <p class="contact-note">
+            Prefer a call or message? You can also reach me at
+            <strong>+44 7352 132097</strong>. When you reach out, feel free to
+            mention if you’re looking for freelance help, a longer‑term role,
+            or just to connect as a fellow builder.
+          </p>
+        </div>
+      </section>
+
+      <section id="online" class="section">
+        <div class="section-header">
+          <h2>Content & Communities</h2>
+          <p>Places where I share, learn, and hang out online.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-tag">Writing</div>
+            <h3>Medium</h3>
+            <p>Articles about backend engineering, learning notes, and experimentation.</p>
+            <div class="project-meta">
+              <a href="https://medium.com/@riteshkoirala514" target="_blank" rel="noreferrer" class="profile-link">
+                Read on Medium
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Q&A</div>
+            <h3>Stack Overflow</h3>
+            <p>My answers and contributions to real developer questions.</p>
+            <div class="project-meta">
+              <a href="https://stackoverflow.com/users/29854163/ritesh-koirala" target="_blank" rel="noreferrer"
+                class="profile-link">
+                View Stack Overflow
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Q&A</div>
+            <h3>Quora</h3>
+            <p>More casual tech discussions and thoughts.</p>
+            <div class="project-meta">
+              <a href="https://www.quora.com/profile/Ritesh-Koirala-6" target="_blank" rel="noreferrer"
+                class="profile-link">
+                Visit Quora
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Visual</div>
+            <h3>Pinterest</h3>
+            <p>Collections of designs, ideas, and tech inspiration.</p>
+            <div class="project-meta">
+              <a href="https://www.pinterest.com/riteshkoirala514/" target="_blank" rel="noreferrer"
+                class="profile-link">
+                Explore Pinterest
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Community</div>
+            <h3>Discord</h3>
+            <p>A small tech space to discuss projects, ideas, and experiments.</p>
+            <div class="project-meta">
+              <a href="https://discord.gg/mynSyJsz" target="_blank" rel="noreferrer" class="profile-link">
+                Join Discord
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Code</div>
+            <h3>GitHub</h3>
+            <p>Open‑source work, experiments, and learning repositories.</p>
+            <div class="project-meta">
+              <a href="https://github.com/Riteshkoirala" target="_blank" rel="noreferrer" class="profile-link">
+                View GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Writing</div>
+            <h3>Dev.to</h3>
+            <p>Developer‑focused posts and coding write‑ups.</p>
+            <div class="project-meta">
+              <a href="https://dev.to/ritesh_koirala_cdd1518003" target="_blank" rel="noreferrer" class="profile-link">
+                Read on Dev.to
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Professional</div>
+            <h3>LinkedIn</h3>
+            <p>Professional profile, experience, and career updates.</p>
+            <div class="project-meta">
+              <a href="https://www.linkedin.com/in/riteshkoirala/" target="_blank" rel="noreferrer"
+                class="profile-link">
+                Open LinkedIn
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Social</div>
+            <h3>Twitter / X</h3>
+            <p>Short thoughts, tech tweets, and random ideas.</p>
+            <div class="project-meta">
+              <a href="https://x.com/Ritesh_k001" target="_blank" rel="noreferrer" class="profile-link">
+                Follow on X
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; <span id="year"></span> Ritesh Koirala</span>
+      <span>Software Developer · PHP / Laravel · JavaScript · MySQL</span>
+    </footer>
   </div>
-</form>
 
-<!-- Include EmailJS SDK -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-<script>
-  (function() {
-      emailjs.init("-mJNfm-4LEGIvo_cN"); // Replace with your EmailJS Public Key
-  })();
-
-  document.getElementById("contact-form").addEventListener("submit", function(event) {
-      event.preventDefault();
-
-      emailjs.sendForm("service_zvlm2gs", "template_xvo22tj", this)
-          .then(function(response) {
-              console.log("SUCCESS!", response.status, response.text);
-              document.querySelector(".sent-message").style.display = "block";
-          }, function(error) {
-              console.log("FAILED...", error);
-              document.querySelector(".error-message").innerText = "Failed to send message. Please try again!";
-          });
-
-      // Reset the form
-      this.reset();
-  });
-</script>
-
-          </div><!-- End Contact Form -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
-
-  </main>
-
-  <footer id="footer" class="footer position-relative light-background">
-
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Ritesh Koirala</strong> <span>All Rights Reserved</span></p>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a >@RiteshKoirala</a>  <a href="https://themewagon.com">@2025</a>
-      </div>
-    </div>
-
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-<script src="//code.tidio.co/8m6kckcrdlimyw8du6yeg9lzixvztc4e.js" async></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
