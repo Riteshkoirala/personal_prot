@@ -18,8 +18,8 @@ function initTheme() {
     setTheme(stored);
     return;
   }
-  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  setTheme(prefersDark ? "dark" : "light");
+  // Default to light theme
+  setTheme("light");
 }
 
 function setupThemeToggle() {
@@ -68,14 +68,14 @@ function initCursor() {
     cursor.targetX += (cursor.x - cursor.targetX) * lerpFactor;
     cursor.targetY += (cursor.y - cursor.targetY) * lerpFactor;
 
-    // Calculate rotation based on movement direction (jeep facing direction)
+    // Calculate rotation based on movement direction (car facing direction)
     let rotation = 0;
     if (cursorSpeed > 50) {
       const angle = Math.atan2(cursor.y - cursor.targetY, cursor.x - cursor.targetX);
       rotation = (angle * 180) / Math.PI;
     }
 
-    // Slight tilt on fast movement (jeep leaning into turns)
+    // Slight tilt on fast movement (car leaning into turns)
     let tilt = 0;
     if (cursorSpeed > 200) {
       const speedFactor = Math.min((cursorSpeed - 200) / 400, 0.3);
@@ -119,16 +119,16 @@ function initCursor() {
         if (entry.isIntersecting) {
           const sectionId = entry.target.id || entry.target.className;
           const colors = {
-            hero: ["#F72585", "#4895EF"],
-            about: ["#F72585", "#4895EF"],
-            skills: ["#4895EF", "#F72585"],
-            projects: ["#F72585", "#B5179E"],
-            experience: ["#4895EF", "#F72585"],
-            contact: ["#F72585", "#4895EF"],
-            "group-projects": ["#4895EF", "#F72585"],
-            "solo-series": ["#F72585", "#4895EF"],
-            online: ["#4895EF", "#F72585"],
-            founders: ["#F72585", "#4895EF"],
+            hero: ["#06B6D4", "#3B82F6"],
+            about: ["#06B6D4", "#3B82F6"],
+            skills: ["#06B6D4", "#3B82F6"],
+            projects: ["#06B6D4", "#0891B2"],
+            experience: ["#3B82F6", "#06B6D4"],
+            contact: ["#06B6D4", "#3B82F6"],
+            "group-projects": ["#3B82F6", "#06B6D4"],
+            "solo-series": ["#06B6D4", "#3B82F6"],
+            online: ["#3B82F6", "#06B6D4"],
+            founders: ["#06B6D4", "#3B82F6"],
           };
           const [color1, color2] = colors[sectionId] || colors.hero;
           cursorEl.style.background = `linear-gradient(135deg, ${color1}, ${color2})`;
@@ -197,23 +197,34 @@ function initCardFlip() {
     if (!card.querySelector(".project-card-inner")) {
       const inner = document.createElement("div");
       inner.className = "project-card-inner";
-      
+
       const front = document.createElement("div");
       front.className = "project-card-front";
       front.innerHTML = card.innerHTML;
-      
+
       const back = document.createElement("div");
       back.className = "project-card-back";
       const backContent = document.createElement("div");
       backContent.className = "project-card-back-content";
-      backContent.innerHTML = `<p>💡 <strong>Click again to flip back!</strong></p><p style="margin-top: 12px; font-size: 14px; opacity: 0.8;">This project demonstrates real-world backend engineering with production-ready code.</p>`;
+
+      // Copy all content from front to back for overflow text
+      const frontClone = front.cloneNode(true);
+      const frontContent = frontClone.innerHTML;
+
+      backContent.innerHTML = `
+        <div style="margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.1);">
+          <p style="font-size: 18px; margin: 0 0 8px; color: var(--accent);">💡 <strong>Full Details</strong></p>
+          <p style="font-size: 12px; margin: 0; opacity: 0.7;">Click to flip back</p>
+        </div>
+        ${frontContent}
+      `;
       back.appendChild(backContent);
-      
+
       inner.appendChild(front);
       inner.appendChild(back);
       card.innerHTML = "";
       card.appendChild(inner);
-      
+
       card.addEventListener("click", (e) => {
         e.stopPropagation();
         card.classList.toggle("flipped");
@@ -226,23 +237,34 @@ function initCardFlip() {
     if (!card.querySelector(".skill-card-inner")) {
       const inner = document.createElement("div");
       inner.className = "skill-card-inner";
-      
+
       const front = document.createElement("div");
       front.className = "skill-card-front";
       front.innerHTML = card.innerHTML;
-      
+
       const back = document.createElement("div");
       back.className = "skill-card-back";
       const backContent = document.createElement("div");
       backContent.className = "skill-card-back-content";
-      backContent.innerHTML = `<p>🚀 <strong>Expert Level</strong></p><p style="margin-top: 12px; font-size: 14px; opacity: 0.8;">Proven through real projects and production deployments.</p>`;
+
+      // Copy all content from front to back for overflow text
+      const frontClone = front.cloneNode(true);
+      const frontContent = frontClone.innerHTML;
+
+      backContent.innerHTML = `
+        <div style="margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.1);">
+          <p style="font-size: 16px; margin: 0 0 8px; color: var(--accent-secondary);">🚀 <strong>Full Details</strong></p>
+          <p style="font-size: 12px; margin: 0; opacity: 0.7;">Click to flip back</p>
+        </div>
+        ${frontContent}
+      `;
       back.appendChild(backContent);
-      
+
       inner.appendChild(front);
       inner.appendChild(back);
       card.innerHTML = "";
       card.appendChild(inner);
-      
+
       card.addEventListener("click", (e) => {
         e.stopPropagation();
         card.classList.toggle("flipped");
@@ -598,7 +620,7 @@ function initWelcomePopup() {
   const closeBtn = document.getElementById("welcomeClose");
   const welcomeBtn = document.getElementById("welcomeBtn");
   const overlay = popup?.querySelector(".welcome-popup-overlay");
-  
+
   if (!popup) return;
 
   // Show popup on every page load/reload after a short delay
