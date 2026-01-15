@@ -18,61 +18,25 @@
 </head>
 
 <body>
-  <div class="cursor-bubble" id="cursorBubble"></div>
-
-  <!-- Welcome Popup Modal -->
-  <div class="welcome-popup" id="welcomePopup">
-    <div class="welcome-popup-content">
-      <div class="welcome-popup-header">
-        <span class="welcome-emoji">👋</span>
-        <button class="welcome-close" id="welcomeClose" aria-label="Close">×</button>
-      </div>
-      <div class="welcome-popup-body">
-        <h2>Hey there! 👋</h2>
-        <p class="welcome-intro">
-          I'm <strong>Ritesh Koirala</strong> — a software engineer with an entrepreneurial mindset,
-          a playful spirit, and an unapologetically curious personality.
-        </p>
-        <p class="welcome-message">
-          I'm someone who's <strong>trying to improve day by day</strong> and will prove worthy of
-          your time and effort. So if you're looking to connect, collaborate, or build something amazing —
-          <strong>contacting me will be worth it.</strong>
-        </p>
-        <p class="welcome-cta">
-          <strong>Whatever your background, let's build something great and win the world! 🚀</strong>
-        </p>
-      </div>
-      <div class="welcome-popup-footer">
-        <button class="btn primary welcome-btn" id="welcomeBtn">
-          Let's Build Together! 🚀
-        </button>
-      </div>
-    </div>
-    <div class="welcome-popup-overlay"></div>
-  </div>
 
   <div class="page">
     <header class="site-header">
       <div class="logo-mark">RK</div>
       <nav class="nav">
-        <a href="#about">About 😎</a>
-        <a href="#skills">Skills ⚡</a>
-        <a href="#hobbies">Hobbies 🌍</a>
-        <a href="#projects">Projects 🚀</a>
-        <a href="#experience">Experience 💼</a>
-        <a href="#contact">Contact 🎯</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-        <span class="theme-icon">☾</span>
-      </button>
     </header>
 
     <main>
       <section class="hero">
         <div class="hero-text">
-          <p class="eyebrow">Software Developer 🚀</p>
+          <p class="eyebrow">Software Developer</p>
           <h1>
-            Hi, I am Ritesh — the <span class="accent-gradient">controlled chaos</span>.
+            Ritesh Koirala
           </h1>
           <p class="hero-subtitle">
             I’m Ritesh Koirala, an entrepreneurial, experiment‑friendly
@@ -82,8 +46,7 @@
             solutions.
           </p>
           <div class="hero-actions">
-            <a href="#projects" class="btn primary">View projects</a>
-            <a href="#contact" class="btn ghost">Let’s work together</a>
+            <a href="#contact" class="btn primary">Contact</a>
           </div>
           <div class="hero-meta">
             <div>
@@ -106,31 +69,30 @@
               <img src="assests/img/profile-photo.jpg" alt="Ritesh Koirala" class="profile-photo" />
             </div>
           </div>
-          <div class="hero-card-body">
-            <h2>Full‑stack developer with a playful, practical mindset.</h2>
-            <p>
-              From database design to front‑end polish, I'm comfortable owning
-              the full lifecycle of a web application and collaborating across
-              teams to ship on time.
-            </p>
-            <ul class="hero-points">
-              <li>End‑to‑end project delivery</li>
-              <li>Clean, maintainable PHP / Laravel code</li>
-              <li>Client‑focused communication & collaboration</li>
-            </ul>
-            <div class="hero-stack">
-              <span class="stack-label">Major Stack:</span>
+          <div class="hero-stack">
+            <span class="stack-label">Technologies</span>
               <div class="stack-tags">
-                <span class="stack-tag">PHP</span>
-                <span class="stack-tag">Laravel</span>
-                <span class="stack-tag">Python</span>
-                <span class="stack-tag">FastAPI</span>
-                <span class="stack-tag">JavaScript</span>
-                <span class="stack-tag">MySQL</span>
-                <span class="stack-tag">AWS</span>
-                <span class="stack-tag">Docker</span>
+                <span class="stack-tag"><span>PHP</span></span>
+                <span class="stack-tag"><span>Laravel</span></span>
+                <span class="stack-tag"><span>Python</span></span>
+                <span class="stack-tag"><span>FastAPI</span></span>
+                <span class="stack-tag"><span>JavaScript</span></span>
+                <span class="stack-tag"><span>React</span></span>
+                <span class="stack-tag"><span>MySQL</span></span>
+                <span class="stack-tag"><span>PostgreSQL</span></span>
+                <span class="stack-tag"><span>MongoDB</span></span>
+                <span class="stack-tag"><span>Redis</span></span>
+                <span class="stack-tag"><span>RabbitMQ</span></span>
+                <span class="stack-tag"><span>AWS</span></span>
+                <span class="stack-tag"><span>Docker</span></span>
+                <span class="stack-tag"><span>Bootstrap</span></span>
+                <span class="stack-tag"><span>Tailwind</span></span>
+                <span class="stack-tag"><span>Stripe</span></span>
+                <span class="stack-tag"><span>Nginx</span></span>
+                <span class="stack-tag"><span>Prometheus</span></span>
+                <span class="stack-tag"><span>Grafana</span></span>
+                <span class="stack-tag"><span>Spark</span></span>
               </div>
-            </div>
           </div>
         </div>
       </section>
@@ -143,360 +105,301 @@
             experience in real projects.
           </p>
         </div>
-        <div class="about-grid">
-          <div class="about-text">
-            <p>
-              I am a results‑driven software developer with experience in
-              full‑stack web development, particularly in PHP, Laravel,
-              JavaScript, and MySQL. I enjoy turning requirements into
-              scalable, reliable web applications and improving existing
-              systems for performance and maintainability.
-            </p>
-            <p>
-              Alongside my professional work, I am building a distributed
-              backend portfolio that includes URL shortening, secure JWT
-              authentication, real‑time messaging, cloud file storage, payment
-              integration, ML‑powered recommendations, microservices for
-              expense tracking, serverless image processing, centralized
-              logging, and API gateway patterns using Python, FastAPI, Redis,
-              PostgreSQL/MongoDB, Docker, RabbitMQ, and AWS.
-            </p>
-            <p>
-              On the front‑end side, I care about clean, intuitive interfaces:
-              applying visual hierarchy, spacing, and layout so users know
-              where to look and what to do next. I like designing consistent,
-              reusable components (buttons, cards, forms, dialogs), keeping
-              typography and color systems readable and on‑brand, and adding
-              small micro‑interactions (hover states, subtle animations, and
-              feedback) that make the experience feel smooth and modern across
-              devices.
-            </p>
-            <p>
-              I am comfortable working across the stack: building REST and
-              real‑time APIs, managing databases, deploying to AWS and
-              Cloudways, and collaborating with designers and stakeholders
-              using Agile practices. Currently, I am pursuing an MSc in
-              Computer Science at the University of East London and actively
-              looking for an industrial placement.
-            </p>
-          </div>
-          <div class="about-highlights">
-            <div class="about-card">
-              <div class="about-card-thumb">
-                <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=200&q=80"
-                  alt="Creative workspace with sticky notes" loading="lazy" />
-              </div>
-              <span class="about-label">Mindset</span>
+        <div class="section-content">
+          <div class="about-grid">
+            <div class="about-text">
               <p>
-                Entrepreneurial, curious, and willing to experiment to find
-                what actually works.
+                I am a results‑driven software developer with experience in
+                full‑stack web development, particularly in PHP, Laravel,
+                JavaScript, and MySQL. I enjoy turning requirements into
+                scalable, reliable web applications and improving existing
+                systems for performance and maintainability.
+              </p>
+              <p>
+                Alongside my professional work, I am building a distributed
+                backend portfolio using Python, FastAPI, Redis, PostgreSQL/MongoDB, 
+                Docker, RabbitMQ, and AWS. I'm comfortable working across the stack: 
+                building REST and real‑time APIs, managing databases, deploying to AWS 
+                and Cloudways, and collaborating with teams using Agile practices.
+              </p>
+              <p>
+                Currently, I am pursuing an MSc in Computer Science at the University 
+                of East London and actively looking for an industrial placement.
               </p>
             </div>
-            <div class="about-card">
-              <div class="about-card-thumb">
-                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=200&q=80"
-                  alt="Hands arranging wireframes on a table" loading="lazy" />
-              </div>
-              <span class="about-label">Superpower</span>
-              <p>
-                Turning half‑baked, “crazy” ideas into structured projects
-                that can ship.
-              </p>
-            </div>
-            <div class="about-card">
-              <div class="about-card-thumb">
-                <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=200&q=80"
-                  alt="Team collaborating around a laptop" loading="lazy" />
-              </div>
-              <span class="about-label">Collaboration</span>
-              <p>
-                Honest, a bit playful, and straightforward when working with
-                clients, teams, and stakeholders.
-              </p>
+            <div>
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="About" class="about-image" />
             </div>
           </div>
         </div>
       </section>
 
-      <section id="founders" class="section">
-        <div class="section-header">
-          <h2>Connect With Entrepreneurial Minds</h2>
-          <p>
-            If you’re a builder, founder, or just someone who loves trying
-            ideas, this is the space for us to connect.
-          </p>
-        </div>
-        <div class="about-grid">
-          <div class="about-text">
-            <p>
-              I naturally think like a builder: I enjoy taking messy ideas,
-              testing them quickly, and turning the good ones into working
-              products. I’m comfortable with ambiguity, changing directions,
-              and the playful “what if we try this?” phase of building.
-            </p>
-            <p>
-              If you’re also entrepreneurial and you want to share ideas,
-              swap lessons, or explore future collaborations, I’m always open
-              to talking with people who think the same way.
-            </p>
-          </div>
-          <div class="about-highlights">
-            <div class="about-card">
-              <div class="about-card-thumb">
-                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80"
-                  alt="Group of friends laughing together" loading="lazy" />
-              </div>
-              <span class="about-label">Who I vibe with</span>
-              <p>
-                Founders, indie hackers, students, and builders who enjoy
-                experimenting, learning in public, and taking smart risks.
-              </p>
-            </div>
-            <div class="about-card">
-              <div class="about-card-thumb">
-                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=200&q=80"
-                  alt="Coworkers planning on sticky notes" loading="lazy" />
-              </div>
-              <span class="about-label">What we can do</span>
-              <p>
-                Chat about ideas, share feedback, pair on small experiments,
-                or simply expand our network of like‑minded people.
-              </p>
-            </div>
-            <div class="about-card">
-              <div class="about-card-thumb">
-                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=200&q=80"
-                  alt="Person sending a message on phone" loading="lazy" />
-              </div>
-              <span class="about-label">How to reach me</span>
-              <p>
-                Use the contact section or any of my socials below and mention
-                you’re reaching out as a fellow founder or builder.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section id="skills" class="section">
         <div class="section-header">
           <h2>Skills</h2>
           <p>Technologies and tools I use to build and ship web applications.</p>
         </div>
-        <div class="skills-grid">
+        <div class="section-content">
+          <div class="skills-grid">
           <article class="skill-card">
-            <h3>Programming & Backend Engineering</h3>
-            <p>
-              Building backend services and APIs with solid coding principles and maintainable design.
-            </p>
-            <ul>
-              <li>Python (primary), FastAPI</li>
-              <li>REST API design and implementation</li>
-              <li>OOP, modular coding, clean architecture</li>
-              <li>Data parsing and validation</li>
-            </ul>
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" alt="Programming & Backend Engineering" class="skill-card-image" />
+            <div class="skill-card-content">
+              <h3>Programming & Backend Engineering</h3>
+              <p>
+                Building backend services and APIs with solid coding principles and maintainable design.
+              </p>
+              <ul>
+                <li>Python (primary), FastAPI</li>
+                <li>REST API design and implementation</li>
+                <li>OOP, modular coding, clean architecture</li>
+                <li>Data parsing and validation</li>
+              </ul>
+            </div>
           </article>
           <article class="skill-card">
-            <h3>Databases & Data Persistence</h3>
-            <p>
-              Designing reliable, efficient data layers for transactional and analytical workloads.
-            </p>
-            <ul>
-              <li>PostgreSQL and MongoDB</li>
-              <li>Schema design and indexing strategies</li>
-              <li>Transaction logging and consistency</li>
-              <li>ORM usage and query optimisation</li>
-            </ul>
+            <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a6d3?auto=format&fit=crop&w=800&q=80" alt="Databases & Data Persistence" class="skill-card-image" />
+            <div class="skill-card-content">
+              <h3>Databases & Data Persistence</h3>
+              <p>
+                Designing reliable, efficient data layers for transactional and analytical workloads.
+              </p>
+              <ul>
+                <li>PostgreSQL and MongoDB</li>
+                <li>Schema design and indexing strategies</li>
+                <li>Transaction logging and consistency</li>
+                <li>ORM usage and query optimisation</li>
+              </ul>
+            </div>
           </article>
           <article class="skill-card">
-            <h3>Distributed Systems & Microservices</h3>
-            <p>
-              Architecting independent services that communicate reliably at scale.
-            </p>
-            <ul>
-              <li>Services for auth, messaging, recommendations, payments, logging</li>
-              <li>Service‑to‑service communication patterns</li>
-              <li>Message queues with RabbitMQ / Redis</li>
-            </ul>
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" alt="Distributed Systems & Microservices" class="skill-card-image" />
+            <div class="skill-card-content">
+              <h3>Distributed Systems & Microservices</h3>
+              <p>
+                Architecting independent services that communicate reliably at scale.
+              </p>
+              <ul>
+                <li>Services for auth, messaging, recommendations, payments, logging</li>
+                <li>Service‑to‑service communication patterns</li>
+                <li>Message queues with RabbitMQ / Redis</li>
+              </ul>
+            </div>
           </article>
           <article class="skill-card">
-            <h3>Cloud & DevOps</h3>
-            <p>
-              Packaging, deploying, and automating backend systems in the cloud.
-            </p>
-            <ul>
-              <li>Docker containerisation and Docker Compose orchestration</li>
-              <li>GitHub Actions for CI/CD pipelines</li>
-              <li>AWS S3, Lambda, API Gateway, IAM roles</li>
-            </ul>
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80" alt="Cloud & DevOps" class="skill-card-image" />
+            <div class="skill-card-content">
+              <h3>Cloud & DevOps</h3>
+              <p>
+                Packaging, deploying, and automating backend systems in the cloud.
+              </p>
+              <ul>
+                <li>Docker containerisation and Docker Compose orchestration</li>
+                <li>GitHub Actions for CI/CD pipelines</li>
+                <li>AWS S3, Lambda, API Gateway, IAM roles</li>
+              </ul>
+            </div>
           </article>
           <article class="skill-card">
-            <h3>Real‑Time & Event‑Driven Systems</h3>
-            <p>
-              Delivering low‑latency, reactive features and workflows.
-            </p>
-            <ul>
-              <li>WebSockets for real‑time communication</li>
-              <li>async/await patterns for concurrency</li>
-              <li>Event triggers with Lambda and callback handling</li>
-            </ul>
+            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80" alt="Real-Time & Event-Driven Systems" class="skill-card-image" />
+            <div class="skill-card-content">
+              <h3>Real‑Time & Event‑Driven Systems</h3>
+              <p>
+                Delivering low‑latency, reactive features and workflows.
+              </p>
+              <ul>
+                <li>WebSockets for real‑time communication</li>
+                <li>async/await patterns for concurrency</li>
+                <li>Event triggers with Lambda and callback handling</li>
+              </ul>
+            </div>
           </article>
           <article class="skill-card">
-            <h3>Security & Authentication</h3>
-            <p>
-              Protecting APIs and data with modern security patterns.
-            </p>
-            <ul>
-              <li>JWT token‑based authentication</li>
-              <li>RBAC (Role‑Based Access Control)</li>
-              <li>Rate limiting and API access control</li>
-            </ul>
+            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80" alt="Security & Authentication" class="skill-card-image" />
+            <div class="skill-card-content">
+              <h3>Security & Authentication</h3>
+              <p>
+                Protecting APIs and data with modern security patterns.
+              </p>
+              <ul>
+                <li>JWT token‑based authentication</li>
+                <li>RBAC (Role‑Based Access Control)</li>
+                <li>Rate limiting and API access control</li>
+              </ul>
+            </div>
           </article>
           <article class="skill-card">
-            <h3>Machine Learning & Data Intelligence</h3>
-            <p>
-              Adding intelligence and personalised behaviour to systems.
-            </p>
-            <ul>
-              <li>scikit‑learn for ML pipelines</li>
-              <li>TF‑IDF and statistical analysis</li>
-              <li>Behaviour‑based recommendation systems</li>
-            </ul>
+            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80" alt="Machine Learning & Data Intelligence" class="skill-card-image" />
+            <div class="skill-card-content">
+              <h3>Machine Learning & Data Intelligence</h3>
+              <p>
+                Adding intelligence and personalised behaviour to systems.
+              </p>
+              <ul>
+                <li>scikit‑learn for ML pipelines</li>
+                <li>TF‑IDF and statistical analysis</li>
+                <li>Behaviour‑based recommendation systems</li>
+              </ul>
+            </div>
           </article>
           <article class="skill-card">
-            <h3>Testing & Quality Engineering</h3>
-            <p>
-              Ensuring systems are correct, reliable, and resilient under load.
-            </p>
-            <ul>
-              <li>Unit and integration testing</li>
-              <li>Load and stress testing</li>
-              <li>Mocking and failure‑scenario simulation</li>
-            </ul>
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Testing & Quality Engineering" class="skill-card-image" />
+            <div class="skill-card-content">
+              <h3>Testing & Quality Engineering</h3>
+              <p>
+                Ensuring systems are correct, reliable, and resilient under load.
+              </p>
+              <ul>
+                <li>Unit and integration testing</li>
+                <li>Load and stress testing</li>
+                <li>Mocking and failure‑scenario simulation</li>
+              </ul>
+            </div>
           </article>
           <article class="skill-card">
-            <h3>Monitoring & Observability</h3>
-            <p>
-              Making systems transparent and measurable in production.
-            </p>
-            <ul>
-              <li>Prometheus metrics and alerting</li>
-              <li>Grafana dashboards and visualisations</li>
-              <li>Log tracing and system health monitoring</li>
-            </ul>
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Monitoring & Observability" class="skill-card-image" />
+            <div class="skill-card-content">
+              <h3>Monitoring & Observability</h3>
+              <p>
+                Making systems transparent and measurable in production.
+              </p>
+              <ul>
+                <li>Prometheus metrics and alerting</li>
+                <li>Grafana dashboards and visualisations</li>
+                <li>Log tracing and system health monitoring</li>
+              </ul>
+            </div>
           </article>
           <article class="skill-card">
-            <h3>Professional Engineering Practices</h3>
-            <p>
-              Working like a production‑grade engineer in real projects.
-            </p>
-            <ul>
-              <li>Agile development and sprint‑based delivery</li>
-              <li>Git workflows and structured commits</li>
-              <li>Documentation, API specs, architecture planning</li>
-            </ul>
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Professional Engineering Practices" class="skill-card-image" />
+            <div class="skill-card-content">
+              <h3>Professional Engineering Practices</h3>
+              <p>
+                Working like a production‑grade engineer in real projects.
+              </p>
+              <ul>
+                <li>Agile development and sprint‑based delivery</li>
+                <li>Git workflows and structured commits</li>
+                <li>Documentation, API specs, architecture planning</li>
+              </ul>
+            </div>
           </article>
+        </div>
         </div>
       </section>
 
       <section id="experience" class="section">
         <div class="section-header">
           <h2>Experience</h2>
-          <p>Recent roles and how I’ve been growing as a developer.</p>
+          <p>Recent roles and how I've been growing as a developer.</p>
         </div>
-        <div class="timeline">
+        <div class="section-content">
+          <div class="timeline">
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <div class="timeline-header">
-                <h3>Freelance Software Developer</h3>
-                <span class="timeline-meta">Remote · Sep 2024 – Jan 2025</span>
+              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Freelance Software Developer" class="timeline-image" />
+              <div class="timeline-content-wrapper">
+                <div class="timeline-header">
+                  <h3>Freelance Software Developer</h3>
+                  <span class="timeline-meta">Remote · Sep 2024 – Jan 2025</span>
+                </div>
+                <ul>
+                  <li>
+                    Designed and developed custom web solutions for global clients
+                    using PHP, Laravel, React, Wix, and JavaScript.
+                  </li>
+                  <li>
+                    Managed deployments on Cloudways, configured domains/hosting,
+                    and maintained Git/GitLab repositories.
+                  </li>
+                  <li>
+                    Handled client communication, time tracking, and post‑launch
+                    support for ongoing improvements.
+                  </li>
+                </ul>
               </div>
-              <ul>
-                <li>
-                  Designed and developed custom web solutions for global clients
-                  using PHP, Laravel, React, Wix, and JavaScript.
-                </li>
-                <li>
-                  Managed deployments on Cloudways, configured domains/hosting,
-                  and maintained Git/GitLab repositories.
-                </li>
-                <li>
-                  Handled client communication, time tracking, and post‑launch
-                  support for ongoing improvements.
-                </li>
-              </ul>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <div class="timeline-header">
-                <h3>Associate Software Engineer</h3>
-                <span class="timeline-meta">FEST PVT. LTD. · May 2023 – Jun 2024</span>
+              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Associate Software Engineer" class="timeline-image" />
+              <div class="timeline-content-wrapper">
+                <div class="timeline-header">
+                  <h3>Associate Software Engineer</h3>
+                  <span class="timeline-meta">FEST PVT. LTD. · May 2023 – Jun 2024</span>
+                </div>
+                <ul>
+                  <li>
+                    Developed and maintained Laravel‑based web applications and
+                    APIs with clean, reusable code.
+                  </li>
+                  <li>
+                    Collaborated with front‑end teams to build responsive UIs and
+                    ensure smooth end‑to‑end user flows.
+                  </li>
+                  <li>
+                    Managed MySQL databases, deployments on AWS/cPanel, and
+                    delivered features in Agile sprints using Jira.
+                  </li>
+                </ul>
               </div>
-              <ul>
-                <li>
-                  Developed and maintained Laravel‑based web applications and
-                  APIs with clean, reusable code.
-                </li>
-                <li>
-                  Collaborated with front‑end teams to build responsive UIs and
-                  ensure smooth end‑to‑end user flows.
-                </li>
-                <li>
-                  Managed MySQL databases, deployments on AWS/cPanel, and
-                  delivered features in Agile sprints using Jira.
-                </li>
-              </ul>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <div class="timeline-header">
-                <h3>Intern, Buddha Technology</h3>
-                <span class="timeline-meta">Feb 2023 – Apr 2023</span>
+              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Intern, Buddha Technology" class="timeline-image" />
+              <div class="timeline-content-wrapper">
+                <div class="timeline-header">
+                  <h3>Intern, Buddha Technology</h3>
+                  <span class="timeline-meta">Feb 2023 – Apr 2023</span>
+                </div>
+                <ul>
+                  <li>
+                    Learned and applied the Laravel framework on real client
+                    projects under senior developer guidance.
+                  </li>
+                  <li>
+                    Assisted with debugging, backend improvements, and basic API
+                    /database tasks.
+                  </li>
+                  <li>
+                    Used Jira in Agile sprints to track work, support testing,
+                    and contribute to documentation.
+                  </li>
+                </ul>
               </div>
-              <ul>
-                <li>
-                  Learned and applied the Laravel framework on real client
-                  projects under senior developer guidance.
-                </li>
-                <li>
-                  Assisted with debugging, backend improvements, and basic API
-                  /database tasks.
-                </li>
-                <li>
-                  Used Jira in Agile sprints to track work, support testing,
-                  and contribute to documentation.
-                </li>
-              </ul>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <div class="timeline-header">
-                <h3>Other Professional Experience – Hospitality</h3>
-                <span class="timeline-meta">WAM Hospitality · Chelsea Stadium · Sep 2025 – Present</span>
+              <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80" alt="Hospitality Experience" class="timeline-image" />
+              <div class="timeline-content-wrapper">
+                <div class="timeline-header">
+                  <h3>Other Professional Experience – Hospitality</h3>
+                  <span class="timeline-meta">WAM Hospitality · Chelsea Stadium · Sep 2025 – Present</span>
+                </div>
+                <ul>
+                  <li>
+                    Work as barista, waiter, and runner in a fast‑paced stadium
+                    hospitality environment at Chelsea Stadium in London.
+                  </li>
+                  <li>
+                    Serve guests to a high standard, balancing speed, accuracy,
+                    and professionalism during peak event times.
+                  </li>
+                  <li>
+                    Strengthened soft skills: teamwork, communication, customer
+                    service, and handling pressure calmly.
+                  </li>
+                </ul>
               </div>
-              <ul>
-                <li>
-                  Work as barista, waiter, and runner in a fast‑paced stadium
-                  hospitality environment at Chelsea Stadium in London.
-                </li>
-                <li>
-                  Serve guests to a high standard, balancing speed, accuracy,
-                  and professionalism during peak event times.
-                </li>
-                <li>
-                  Strengthened soft skills: teamwork, communication, customer
-                  service, and handling pressure calmly.
-                </li>
-              </ul>
             </div>
           </div>
+        </div>
         </div>
       </section>
 
@@ -505,44 +408,52 @@
           <h2>Projects</h2>
           <p>Selected work that shows what I build and how I think.</p>
         </div>
-        <div class="projects-grid">
+        <div class="section-content">
+          <div class="projects-grid">
           <article class="project-card">
-            <div class="project-tag">Academic</div>
-            <h3>Job Recommendation System</h3>
-            <p>
-              A Laravel and PHP‑based recommendation system that suggests IT
-              career paths and opportunities based on user skills and
-              preferences, supported by Python and JavaScript for analysis and
-              interactivity.
-            </p>
-            <ul>
-              <li>Implemented user profiles and skill matching logic</li>
-              <li>Integrated database‑driven recommendation workflows</li>
-              <li>Delivered as part of BSc dissertation with first‑class result</li>
-            </ul>
-            <div class="project-meta">
-              <span>PHP · Laravel · MySQL · Python · JavaScript</span>
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Job Recommendation System" class="project-image" />
+            <div class="project-card-content">
+              <div class="project-tag">Academic</div>
+              <h3>Job Recommendation System</h3>
+              <p>
+                A Laravel and PHP‑based recommendation system that suggests IT
+                career paths and opportunities based on user skills and
+                preferences, supported by Python and JavaScript for analysis and
+                interactivity.
+              </p>
+              <ul>
+                <li>Implemented user profiles and skill matching logic</li>
+                <li>Integrated database‑driven recommendation workflows</li>
+                <li>Delivered as part of BSc dissertation with first‑class result</li>
+              </ul>
+              <div class="project-meta">
+                <span>PHP · Laravel · MySQL · Python · JavaScript</span>
+              </div>
             </div>
           </article>
 
           <article class="project-card">
-            <div class="project-tag">Client</div>
-            <h3>Business Websites (Freelance)</h3>
-            <p>
-              Designed and developed custom web solutions for international
-              clients, including sites such as dev.gbho.org and
-              metroparkmy.com, focusing on usability, performance, and simple
-              content management.
-            </p>
-            <ul>
-              <li>Built responsive frontends with Bootstrap and Tailwind</li>
-              <li>Configured hosting, domains, and deployments via Cloudways</li>
-              <li>Maintained Git‑based workflows for client updates</li>
-            </ul>
-            <div class="project-meta">
-              <span>PHP · Laravel · JavaScript · Cloudways</span>
+            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=800&q=80" alt="Business Websites" class="project-image" />
+            <div class="project-card-content">
+              <div class="project-tag">Client</div>
+              <h3>Business Websites (Freelance)</h3>
+              <p>
+                Designed and developed custom web solutions for international
+                clients, including sites such as dev.gbho.org and
+                metroparkmy.com, focusing on usability, performance, and simple
+                content management.
+              </p>
+              <ul>
+                <li>Built responsive frontends with Bootstrap and Tailwind</li>
+                <li>Configured hosting, domains, and deployments via Cloudways</li>
+                <li>Maintained Git‑based workflows for client updates</li>
+              </ul>
+              <div class="project-meta">
+                <span>PHP · Laravel · JavaScript · Cloudways</span>
+              </div>
             </div>
           </article>
+        </div>
         </div>
       </section>
 
@@ -554,164 +465,188 @@
             backend or cloud capability.
           </p>
         </div>
-        <div class="section-illustration">
-          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80"
-            alt="Solo builder working at night" loading="lazy" />
-          <span class="section-illustration-caption">Night-time build sessions powering the solo backend series.</span>
+        <div class="section-content">
+          <div class="projects-grid">
+          <article class="project-card">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" alt="URL Shortener Service" class="project-image" />
+            <div class="project-card-content">
+              <div class="project-tag">Solo</div>
+              <h3>URL Shortener Service</h3>
+              <p>
+                Backend service where long URLs are converted into short,
+                shareable Base62 keys and redirected efficiently.
+              </p>
+              <ul>
+                <li>Python + FastAPI REST API with clean routing</li>
+                <li>PostgreSQL schema with indexed lookups</li>
+                <li>Custom hashing, validation, and unit tests</li>
+              </ul>
+              <div class="project-meta">
+                <span>APIs · PostgreSQL · Hashing</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80" alt="Secure Auth & User Access" class="project-image" />
+            <div class="project-card-content">
+              <div class="project-tag">Solo</div>
+              <h3>Secure Auth & User Access</h3>
+              <p>
+                Authentication and authorisation system with JWT tokens, secure
+                password storage, and role‑based access control.
+              </p>
+              <ul>
+                <li>JWT access & refresh tokens with bcrypt hashing</li>
+                <li>RBAC rules and protected routes via middleware</li>
+                <li>Session validation and structured error handling</li>
+              </ul>
+              <div class="project-meta">
+                <span>Security · Auth · RBAC</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80" alt="Real-Time Chat Platform" class="project-image" />
+            <div class="project-card-content">
+              <div class="project-tag">Solo</div>
+              <h3>Real‑Time Chat Platform</h3>
+              <p>
+                WebSocket‑based messaging platform with real‑time chat,
+                presence, and persistent message history.
+              </p>
+              <ul>
+                <li>WebSockets with async/await handlers</li>
+                <li>Redis pub/sub for scalable message fan‑out</li>
+                <li>Typing indicators, presence, and reconnect logic</li>
+              </ul>
+              <div class="project-meta">
+                <span>Realtime · WebSockets · Redis</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80" alt="Payment & Billing Integration" class="project-image" />
+            <div class="project-card-content">
+              <div class="project-tag">Solo</div>
+              <h3>Payment & Billing Integration</h3>
+              <p>
+                Payment gateway integration for secure checkout, invoicing, and
+                transaction history.
+              </p>
+              <ul>
+                <li>Stripe checkout sessions and webhook verification</li>
+                <li>Transaction and invoice logging with audit trail</li>
+                <li>Handling refunds, partial payments, and failures</li>
+              </ul>
+              <div class="project-meta">
+                <span>Stripe · Webhooks · Billing</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80" alt="ML Recommendation Engine" class="project-image" />
+            <div class="project-card-content">
+              <div class="project-tag">Solo</div>
+              <h3>ML Recommendation Engine</h3>
+              <p>
+                Behaviour‑based recommendation service powered by scikit‑learn
+                and text feature engineering.
+              </p>
+              <ul>
+                <li>TF‑IDF vectorisation and cosine similarity</li>
+                <li>Model training, tuning, and evaluation</li>
+                <li>FastAPI inference endpoint for real‑time use</li>
+              </ul>
+              <div class="project-meta">
+                <span>ML · scikit‑learn · Recommendations</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" alt="Microservices Expense Tracker" class="project-image" />
+            <div class="project-card-content">
+              <div class="project-tag">Solo</div>
+              <h3>Microservices Expense Tracker</h3>
+              <p>
+                Expense tracking platform refactored into multiple independent,
+                containerised services.
+              </p>
+              <ul>
+                <li>Auth, expenses, reports, analytics microservices</li>
+                <li>RabbitMQ for async communication and decoupling</li>
+                <li>Dockerised services designed for horizontal scaling</li>
+              </ul>
+              <div class="project-meta">
+                <span>Microservices · RabbitMQ · Docker</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80" alt="Serverless Image Pipeline" class="project-image" />
+            <div class="project-card-content">
+              <div class="project-tag">Solo</div>
+              <h3>Serverless Image Pipeline</h3>
+              <p>
+                Serverless image processing pipeline triggered by uploads to a
+                cloud storage bucket.
+              </p>
+              <ul>
+                <li>AWS S3 events triggering Lambda functions</li>
+                <li>Image resize/convert and metadata updates</li>
+                <li>Least‑privilege IAM setup and cold‑start tuning</li>
+              </ul>
+              <div class="project-meta">
+                <span>AWS · Lambda · S3</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Observability & Monitoring Stack" class="project-image" />
+            <div class="project-card-content">
+              <div class="project-tag">Solo</div>
+              <h3>Observability & Monitoring Stack</h3>
+              <p>
+                Centralised observability layer for backend services with
+                metrics, dashboards, and alerts.
+              </p>
+              <ul>
+                <li>Prometheus metrics for latency, throughput, errors</li>
+                <li>Grafana dashboards and alert rules</li>
+                <li>Structured logs and correlation IDs for tracing</li>
+              </ul>
+              <div class="project-meta">
+                <span>Prometheus · Grafana · Logging</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" alt="API Gateway & Rate Limiting" class="project-image" />
+            <div class="project-card-content">
+              <div class="project-tag">Solo</div>
+              <h3>API Gateway & Rate Limiting</h3>
+              <p>
+                Central API gateway fronting internal services with traffic
+                control and access policies.
+              </p>
+              <ul>
+                <li>Nginx/Kong‑style gateway with routing and load balancing</li>
+                <li>Per‑user quotas, API keys, and IP‑based throttling</li>
+                <li>Protection against brute‑force and burst traffic</li>
+              </ul>
+              <div class="project-meta">
+                <span>Gateways · Rate Limiting · Security</span>
+              </div>
+            </div>
+          </article>
         </div>
-        <div class="projects-grid">
-          <article class="project-card">
-            <div class="project-tag">Solo</div>
-            <h3>URL Shortener Service</h3>
-            <p>
-              Backend service where long URLs are converted into short,
-              shareable Base62 keys and redirected efficiently.
-            </p>
-            <ul>
-              <li>Python + FastAPI REST API with clean routing</li>
-              <li>PostgreSQL schema with indexed lookups</li>
-              <li>Custom hashing, validation, and unit tests</li>
-            </ul>
-            <div class="project-meta">
-              <span>APIs · PostgreSQL · Hashing</span>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-tag">Solo</div>
-            <h3>Secure Auth & User Access</h3>
-            <p>
-              Authentication and authorisation system with JWT tokens, secure
-              password storage, and role‑based access control.
-            </p>
-            <ul>
-              <li>JWT access & refresh tokens with bcrypt hashing</li>
-              <li>RBAC rules and protected routes via middleware</li>
-              <li>Session validation and structured error handling</li>
-            </ul>
-            <div class="project-meta">
-              <span>Security · Auth · RBAC</span>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-tag">Solo</div>
-            <h3>Real‑Time Chat Platform</h3>
-            <p>
-              WebSocket‑based messaging platform with real‑time chat,
-              presence, and persistent message history.
-            </p>
-            <ul>
-              <li>WebSockets with async/await handlers</li>
-              <li>Redis pub/sub for scalable message fan‑out</li>
-              <li>Typing indicators, presence, and reconnect logic</li>
-            </ul>
-            <div class="project-meta">
-              <span>Realtime · WebSockets · Redis</span>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-tag">Solo</div>
-            <h3>Payment & Billing Integration</h3>
-            <p>
-              Payment gateway integration for secure checkout, invoicing, and
-              transaction history.
-            </p>
-            <ul>
-              <li>Stripe checkout sessions and webhook verification</li>
-              <li>Transaction and invoice logging with audit trail</li>
-              <li>Handling refunds, partial payments, and failures</li>
-            </ul>
-            <div class="project-meta">
-              <span>Stripe · Webhooks · Billing</span>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-tag">Solo</div>
-            <h3>ML Recommendation Engine</h3>
-            <p>
-              Behaviour‑based recommendation service powered by scikit‑learn
-              and text feature engineering.
-            </p>
-            <ul>
-              <li>TF‑IDF vectorisation and cosine similarity</li>
-              <li>Model training, tuning, and evaluation</li>
-              <li>FastAPI inference endpoint for real‑time use</li>
-            </ul>
-            <div class="project-meta">
-              <span>ML · scikit‑learn · Recommendations</span>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-tag">Solo</div>
-            <h3>Microservices Expense Tracker</h3>
-            <p>
-              Expense tracking platform refactored into multiple independent,
-              containerised services.
-            </p>
-            <ul>
-              <li>Auth, expenses, reports, analytics microservices</li>
-              <li>RabbitMQ for async communication and decoupling</li>
-              <li>Dockerised services designed for horizontal scaling</li>
-            </ul>
-            <div class="project-meta">
-              <span>Microservices · RabbitMQ · Docker</span>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-tag">Solo</div>
-            <h3>Serverless Image Pipeline</h3>
-            <p>
-              Serverless image processing pipeline triggered by uploads to a
-              cloud storage bucket.
-            </p>
-            <ul>
-              <li>AWS S3 events triggering Lambda functions</li>
-              <li>Image resize/convert and metadata updates</li>
-              <li>Least‑privilege IAM setup and cold‑start tuning</li>
-            </ul>
-            <div class="project-meta">
-              <span>AWS · Lambda · S3</span>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-tag">Solo</div>
-            <h3>Observability & Monitoring Stack</h3>
-            <p>
-              Centralised observability layer for backend services with
-              metrics, dashboards, and alerts.
-            </p>
-            <ul>
-              <li>Prometheus metrics for latency, throughput, errors</li>
-              <li>Grafana dashboards and alert rules</li>
-              <li>Structured logs and correlation IDs for tracing</li>
-            </ul>
-            <div class="project-meta">
-              <span>Prometheus · Grafana · Logging</span>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-tag">Solo</div>
-            <h3>API Gateway & Rate Limiting</h3>
-            <p>
-              Central API gateway fronting internal services with traffic
-              control and access policies.
-            </p>
-            <ul>
-              <li>Nginx/Kong‑style gateway with routing and load balancing</li>
-              <li>Per‑user quotas, API keys, and IP‑based throttling</li>
-              <li>Protection against brute‑force and burst traffic</li>
-            </ul>
-            <div class="project-meta">
-              <span>Gateways · Rate Limiting · Security</span>
-            </div>
-          </article>
         </div>
       </section>
 
@@ -723,170 +658,114 @@
             delivered real working systems.
           </p>
         </div>
-        <div class="section-illustration">
-          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80"
-            alt="Product team collaborating" loading="lazy" />
-          <span class="section-illustration-caption">Running workshops with cross-functional teammates.</span>
-        </div>
-        <div class="projects-grid">
+        <div class="section-content">
+          <div class="projects-grid">
           <article class="project-card">
-            <div class="project-tag">Team Lead</div>
-            <h3>Smart Invoice Processing System</h3>
-            <p>
-              Group project where I acted as group leader and lead backend
-              engineer, delivering an AI‑driven invoice automation platform
-              combining OCR, classification, and a robust API layer.
-            </p>
-            <ul>
-              <li>
-                Led a team of developers, managed sprints, assigned tasks, and
-                reviewed/merged pull requests.
-              </li>
-              <li>
-                Designed overall system architecture and data flow between
-                upload services, OCR, AI, and storage.
-              </li>
-              <li>
-                Implemented backend APIs, invoice upload pipeline, OCR
-                extraction (Tesseract/AWS Textract), and AI categorisation
-                using scikit‑learn and rules.
-              </li>
-              <li>
-                Created database schema for parsed invoice details, set up
-                Docker environment, deployment pipelines, and unit tests.
-              </li>
-            </ul>
-            <div class="project-meta">
-              <span>Leadership · OCR/AI Pipelines · Laravel/Python · Docker</span>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-tag">Team Lead</div>
-            <h3>Big Data Analytics Platform</h3>
-            <p>
-              Group big‑data project where I coordinated the data engineering
-              work, from ingestion to analysis and visualisation, using
-              Spark‑based tooling.
-            </p>
-            <ul>
-              <li>
-                Supervised a data‑focused team, delegated tasks, enforced Git
-                workflow discipline, and coordinated with data scientists.
-              </li>
-              <li>
-                Selected datasets (e.g. Amazon Reviews, KDD CUP) and designed
-                ingestion pipelines using PySpark and Hadoop/HDFS.
-              </li>
-              <li>
-                Implemented cleaning, normalisation, and regex‑based feature
-                extraction plus Spark SQL queries.
-              </li>
-              <li>
-                Compared RDD vs DataFrame performance, produced visual
-                analytics (Matplotlib/Seaborn/Grafana), and delivered insight
-                presentations.
-              </li>
-            </ul>
-            <div class="project-meta">
-              <span>Big Data · Spark/Hadoop · Analytics · Team Leadership</span>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-tag">Team Lead</div>
-            <h3>Bachelor's Course Management System</h3>
-            <p>
-              Academic capstone‑style project where I owned the architecture
-              and led a small team to build a full‑stack course management
-              platform for students, teachers, and admins.
-            </p>
-            <ul>
-              <li>
-                Defined project scope, feature list, and delivery milestones
-                while coordinating teammate modules.
-              </li>
-              <li>
-                Designed relational database schema for courses, students,
-                faculty, and enrolments in MySQL.
-              </li>
-              <li>
-                Implemented authentication and role system (admin/teacher/
-                student), session management, and core CRUD flows in Laravel.
-              </li>
-              <li>
-                Reviewed teammates' code, maintained coding standards, and
-                ensured validation, error handling, and final demo quality.
-              </li>
-            </ul>
-            <div class="project-meta">
-              <span>Laravel · MySQL · Access Control · Academic Leadership</span>
-            </div>
-          </article>
-        </div>
-        <p style="margin-top: 14px; font-size: 13px; color: var(--text-soft);">
-          Collectively, these group projects show that I can lead engineering
-          teams, own architecture, and still be hands‑on with backend, data,
-          and deployment work.
-        </p>
-      </section>
-
-      <section id="hobbies" class="section section-hobbies">
-        <div class="section-header">
-          <h2>Hobbies & Interests</h2>
-          <p>Outside code, I recharge by exploring new places and people.</p>
-        </div>
-        <div class="hobbies-grid">
-          <article class="hobby-card">
-            <div class="hobby-image">
-              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80"
-                alt="Mountain travel adventure" loading="lazy" />
-            </div>
-            <div class="hobby-content">
-              <span class="hobby-tag">Travel</span>
-              <h3>Collecting city stories</h3>
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Smart Invoice Processing System" class="project-image" />
+            <div class="project-card-content">
+              <div class="project-tag">Team Lead</div>
+              <h3>Smart Invoice Processing System</h3>
               <p>
-                Weekend trips and backpack missions keep my curiosity alive. I love wandering through new streets,
-                tasting local food, and capturing scenes that later fuel design inspiration.
+                Group project where I acted as group leader and lead backend
+                engineer, delivering an AI‑driven invoice automation platform
+                combining OCR, classification, and a robust API layer.
               </p>
-            </div>
-          </article>
-
-          <article class="hobby-card">
-            <div class="hobby-image">
-              <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80"
-                alt="People networking together" loading="lazy" />
-            </div>
-            <div class="hobby-content">
-              <span class="hobby-tag">Meeting People</span>
-              <h3>Genuine conversations</h3>
-              <p>
-                Coffee chats with founders, artists, or travelers help me see problems from fresh angles and remind me
-                that software always starts with people.
-              </p>
-            </div>
-          </article>
-
-          <article class="hobby-card">
-            <div class="hobby-image">
-              <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=800&q=80"
-                alt="Collaborative meetup" loading="lazy" />
-            </div>
-            <div class="hobby-content">
-              <div class="hobby-inline-photo">
-                <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=200&q=80"
-                  alt="Close-up of people high-fiving at an event" loading="lazy" />
+              <ul>
+                <li>
+                  Led a team of developers, managed sprints, assigned tasks, and
+                  reviewed/merged pull requests.
+                </li>
+                <li>
+                  Designed overall system architecture and data flow between
+                  upload services, OCR, AI, and storage.
+                </li>
+                <li>
+                  Implemented backend APIs, invoice upload pipeline, OCR
+                  extraction (Tesseract/AWS Textract), and AI categorisation
+                  using scikit‑learn and rules.
+                </li>
+                <li>
+                  Created database schema for parsed invoice details, set up
+                  Docker environment, deployment pipelines, and unit tests.
+                </li>
+              </ul>
+              <div class="project-meta">
+                <span>Leadership · OCR/AI Pipelines · Laravel/Python · Docker</span>
               </div>
-              <span class="hobby-tag">Networking</span>
-              <h3>Community energy</h3>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Big Data Analytics Platform" class="project-image" />
+            <div class="project-card-content">
+              <div class="project-tag">Team Lead</div>
+              <h3>Big Data Analytics Platform</h3>
               <p>
-                I regularly drop into tech meetups and builder events to swap ideas, help peers debug, and hunt for the
-                next collaboration spark.
+                Group big‑data project where I coordinated the data engineering
+                work, from ingestion to analysis and visualisation, using
+                Spark‑based tooling.
               </p>
+              <ul>
+                <li>
+                  Supervised a data‑focused team, delegated tasks, enforced Git
+                  workflow discipline, and coordinated with data scientists.
+                </li>
+                <li>
+                  Selected datasets (e.g. Amazon Reviews, KDD CUP) and designed
+                  ingestion pipelines using PySpark and Hadoop/HDFS.
+                </li>
+                <li>
+                  Implemented cleaning, normalisation, and regex‑based feature
+                  extraction plus Spark SQL queries.
+                </li>
+                <li>
+                  Compared RDD vs DataFrame performance, produced visual
+                  analytics (Matplotlib/Seaborn/Grafana), and delivered insight
+                  presentations.
+                </li>
+              </ul>
+              <div class="project-meta">
+                <span>Big Data · Spark/Hadoop · Analytics · Team Leadership</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=800&q=80" alt="Bachelor's Course Management System" class="project-image" />
+            <div class="project-card-content">
+              <div class="project-tag">Team Lead</div>
+              <h3>Bachelor's Course Management System</h3>
+              <p>
+                Academic capstone‑style project where I owned the architecture
+                and led a small team to build a full‑stack course management
+                platform for students, teachers, and admins.
+              </p>
+              <ul>
+                <li>
+                  Defined project scope, feature list, and delivery milestones
+                  while coordinating teammate modules.
+                </li>
+                <li>
+                  Designed relational database schema for courses, students,
+                  faculty, and enrolments in MySQL.
+                </li>
+                <li>
+                  Implemented authentication and role system (admin/teacher/
+                  student), session management, and core CRUD flows in Laravel.
+                </li>
+                <li>
+                  Reviewed teammates' code, maintained coding standards, and
+                  ensured validation, error handling, and final demo quality.
+                </li>
+              </ul>
+              <div class="project-meta">
+                <span>Laravel · MySQL · Access Control · Academic Leadership</span>
+              </div>
             </div>
           </article>
         </div>
       </section>
+
 
       <section id="contact" class="section section-contact">
         <div class="section-header">
@@ -896,132 +775,44 @@
             backend problems, feel free to reach out.
           </p>
         </div>
-        <div class="contact-card">
-          <p>
-            I’m currently studying MSc Computer Science at the University of
-            East London and open to software development roles, industrial
-            placements, freelance backend projects, and collaborations with
-            founders and other builders.
-          </p>
-          <div class="contact-actions">
-            <a href="mailto:riteshkoirala514@gmail.com" class="btn primary">
-              Email me
-            </a>
-            <a href="https://www.linkedin.com/in/riteshkoirala/" target="_blank" rel="noreferrer" class="btn ghost">
-              View LinkedIn
-            </a>
-            <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noreferrer" class="btn ghost">
-              Instagram
-            </a>
-            <a href="https://linktr.ee/yourprofile" target="_blank" rel="noreferrer" class="btn ghost">
-              Linktree
-            </a>
-            <a href="https://wa.me/447352132097" target="_blank" rel="noreferrer" class="btn ghost">
-              WhatsApp
-            </a>
-            <a href="https://github.com/yourusername" target="_blank" rel="noreferrer" class="btn ghost">
-              GitHub
-            </a>
+        <div class="section-content">
+          <div class="contact-card">
+            <p>
+              I'm currently studying MSc Computer Science at the University of
+              East London and open to software development roles, industrial
+              placements, freelance backend projects, and collaborations with
+              founders and other builders.
+            </p>
+            <div class="contact-actions">
+              <a href="mailto:riteshkoirala514@gmail.com" class="btn primary">
+                Email me
+              </a>
+              <a href="https://www.linkedin.com/in/riteshkoirala/" target="_blank" rel="noreferrer" class="btn ghost">
+                View LinkedIn
+              </a>
+              <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noreferrer" class="btn ghost">
+                Instagram
+              </a>
+              <a href="https://linktr.ee/yourprofile" target="_blank" rel="noreferrer" class="btn ghost">
+                Linktree
+              </a>
+              <a href="https://wa.me/447352132097" target="_blank" rel="noreferrer" class="btn ghost">
+                WhatsApp
+              </a>
+              <a href="https://github.com/yourusername" target="_blank" rel="noreferrer" class="btn ghost">
+                GitHub
+              </a>
+            </div>
+            <p class="contact-note">
+              Prefer a call or message? You can also reach me at
+              <strong>+44 7352 132097</strong>. When you reach out, feel free to
+              mention if you're looking for freelance help, a longer‑term role,
+              or just to connect as a fellow builder.
+            </p>
           </div>
-          <p class="contact-note">
-            Prefer a call or message? You can also reach me at
-            <strong>+44 7352 132097</strong>. When you reach out, feel free to
-            mention if you’re looking for freelance help, a longer‑term role,
-            or just to connect as a fellow builder.
-          </p>
         </div>
       </section>
 
-      <section id="online" class="section">
-        <div class="section-header">
-          <h2>Content & Communities</h2>
-          <p>Places where I share, learn, and hang out online.</p>
-        </div>
-        <div class="communities-grid">
-          <a href="https://medium.com/@riteshkoirala514" target="_blank" rel="noreferrer" class="community-card">
-            <div class="community-icon">📝</div>
-            <div class="community-content">
-              <h3>Medium</h3>
-              <p>Writing</p>
-            </div>
-            <div class="community-arrow">→</div>
-          </a>
-
-          <a href="https://stackoverflow.com/users/29854163/ritesh-koirala" target="_blank" rel="noreferrer"
-            class="community-card">
-            <div class="community-icon">💬</div>
-            <div class="community-content">
-              <h3>Stack Overflow</h3>
-              <p>Q&A</p>
-            </div>
-            <div class="community-arrow">→</div>
-          </a>
-
-          <a href="https://www.quora.com/profile/Ritesh-Koirala-6" target="_blank" rel="noreferrer"
-            class="community-card">
-            <div class="community-icon">❓</div>
-            <div class="community-content">
-              <h3>Quora</h3>
-              <p>Q&A</p>
-            </div>
-            <div class="community-arrow">→</div>
-          </a>
-
-          <a href="https://www.pinterest.com/riteshkoirala514/" target="_blank" rel="noreferrer" class="community-card">
-            <div class="community-icon">📌</div>
-            <div class="community-content">
-              <h3>Pinterest</h3>
-              <p>Visual</p>
-            </div>
-            <div class="community-arrow">→</div>
-          </a>
-
-          <a href="https://discord.gg/mynSyJsz" target="_blank" rel="noreferrer" class="community-card">
-            <div class="community-icon">💬</div>
-            <div class="community-content">
-              <h3>Discord</h3>
-              <p>Community</p>
-            </div>
-            <div class="community-arrow">→</div>
-          </a>
-
-          <a href="https://github.com/Riteshkoirala" target="_blank" rel="noreferrer" class="community-card">
-            <div class="community-icon">💻</div>
-            <div class="community-content">
-              <h3>GitHub</h3>
-              <p>Code</p>
-            </div>
-            <div class="community-arrow">→</div>
-          </a>
-
-          <a href="https://dev.to/ritesh_koirala_cdd1518003" target="_blank" rel="noreferrer" class="community-card">
-            <div class="community-icon">📚</div>
-            <div class="community-content">
-              <h3>Dev.to</h3>
-              <p>Writing</p>
-            </div>
-            <div class="community-arrow">→</div>
-          </a>
-
-          <a href="https://www.linkedin.com/in/riteshkoirala/" target="_blank" rel="noreferrer" class="community-card">
-            <div class="community-icon">💼</div>
-            <div class="community-content">
-              <h3>LinkedIn</h3>
-              <p>Professional</p>
-            </div>
-            <div class="community-arrow">→</div>
-          </a>
-
-          <a href="https://x.com/Ritesh_k001" target="_blank" rel="noreferrer" class="community-card">
-            <div class="community-icon">🐦</div>
-            <div class="community-content">
-              <h3>Twitter / X</h3>
-              <p>Social</p>
-            </div>
-            <div class="community-arrow">→</div>
-          </a>
-        </div>
-      </section>
     </main>
 
     <footer class="site-footer">
